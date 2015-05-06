@@ -66,3 +66,18 @@ a img {
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
+
+/* line 8, ../sass/screen.scss */
+body, html {
+  height: 100%;
+}
+
+/* line 12, ../sass/screen.scss */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 8%;
+  width: 100%;
+  background: #111111;
+}
