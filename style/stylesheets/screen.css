@@ -449,19 +449,15 @@ header {
   width: 100%;
   background: #111111;
 }
-/* line 14, ../sass/screen.scss */
-header nav {
-  float: right;
+
+/* line 15, ../sass/screen.scss */
+main {
   height: 100%;
-  width: 50%;
-  max-width: 200px;
-  background: red;
+  background: #fafafa;
 }
-/* line 21, ../sass/screen.scss */
-header nav ul {
-  position: relative;
+
+/* line 20, ../sass/screen.scss */
+section {
   height: 100%;
-  width: 100%;
-  background: blue;
-  margin: 0;
+  background: white;
 }
