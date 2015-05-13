@@ -475,7 +475,12 @@ header {
   display: flex;
   -webkit-flex: 1;
   flex: 1;
-  padding: 2vh;
+  padding: 1vh;
+  /* .test:before {
+       padding-top: 177%;
+       content: "";
+       display: block;
+   }*/
 }
 /* line 51, ../sass/screen.scss */
 .ui .grid .col .module {
@@ -486,16 +491,12 @@ header {
   text-align: center;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
+  height: 23.333vh;
+  width: 15vh;
 }
-/* line 61, ../sass/screen.scss */
+/* line 63, ../sass/screen.scss */
 .ui .grid .col .test {
   background: url(../../assets/nyc.jpg);
   padding: 0;
   background-size: cover;
-}
-/* line 67, ../sass/screen.scss */
-.ui .grid .col .test:before {
-  padding-top: 177%;
-  content: "";
-  display: block;
 }

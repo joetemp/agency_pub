@@ -9,7 +9,7 @@
     margin: $margin;
 }
 
-@mixin _col($padding: 2vh) {
+@mixin _col($padding: 1vh) {
     padding: $padding;
 }  
 
@@ -55,6 +55,8 @@ header {
                 text-align: center;
                 font-family: 'Roboto', sans-serif;
                 font-weight: 400;
+                height: 33.333vh - 10vh;
+                width: 15vh;
 
             }
 
@@ -64,11 +66,11 @@ header {
                 background-size: cover;
             }
 
-            .test:before {
+           /* .test:before {
                 padding-top: 177%;
                 content: "";
                 display: block;
-            }
+            }*/
         }
     }
 }
