@@ -444,14 +444,14 @@ body, html {
 /* line 29, ../sass/screen.scss */
 .ui {
   height: 100vh;
-  background: red;
+  background: #533A71;
 }
 /* line 33, ../sass/screen.scss */
 .ui .grid {
   width: 100%;
   max-width: 100%;
   margin: auto;
-  background: yellow;
+  background: #EAE9EB;
   display: -webkit-flex;
   display: flex;
   -webkit-flex: 1;
@@ -472,10 +472,12 @@ body, html {
 .ui .grid .col .module {
   padding: 1vh;
   width: 100%;
-  background-color: #ecf0f1;
+  background: #6184DB;
   color: #bdc3c7;
   text-align: center;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   height: 29.333vh;
+  line-height: 29.333vh;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.3);
 }
