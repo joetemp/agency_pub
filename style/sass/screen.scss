@@ -1,7 +1,62 @@
+// Imports
 @import "normalize";
+@import "compass/css3";
 
-body, html{
+// Custom Mixins
+@mixin _grid($width, $max-width, $margin) {
+    width: $width;
+    max-width: $width;
+    margin: $margin;
+}
+
+@mixin _col($padding: 1em) {
+    padding: $padding;
+}  
+
+@mixin _module ($padding: 1em) {
+    padding: $padding;
+    width: 100%;
+}
+
+// Styling rules
+body, html {
     height: 100%;
 }
 
+.grid {
+    @include _grid(95%, 1280px, auto);
+    background: yellow;
+    @include display-flex;
+    @include flex(1);
+    @include flex-flow(row wrap);
+
+    .col {
+        @include display-flex;
+        @include flex(1);
+        @include _col;
+
+        .module {
+            @include _module;
+            background-color: #ecf0f1;
+            border-radius: 0.25em;
+            color: #bdc3c7;
+            text-align: center;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 400;
+
+        }
+
+        .test {
+            background: url(../../assets/nyc.jpg);
+            padding: 0; 
+            background-size: cover;
+        }
+
+        .test:before {
+            padding-top: 177%;
+            content: "";
+            display: block;
+        }
+    }
+}
 
