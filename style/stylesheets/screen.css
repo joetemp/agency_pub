@@ -442,7 +442,22 @@ body, html {
 }
 
 /* line 26, ../sass/screen.scss */
-.grid {
+header {
+  position: fixed;
+  top: 0;
+  height: 10vh;
+  width: 100%;
+  background: black;
+}
+
+/* line 34, ../sass/screen.scss */
+.ui {
+  margin-top: 12.5vh;
+  height: 90vh;
+  background: red;
+}
+/* line 39, ../sass/screen.scss */
+.ui .grid {
   width: 95%;
   max-width: 95%;
   margin: auto;
@@ -454,33 +469,32 @@ body, html {
   -webkit-flex-flow: row wrap;
   flex-flow: row wrap;
 }
-/* line 33, ../sass/screen.scss */
-.grid .col {
+/* line 46, ../sass/screen.scss */
+.ui .grid .col {
   display: -webkit-flex;
   display: flex;
   -webkit-flex: 1;
   flex: 1;
-  padding: 1em;
+  padding: 2vh;
 }
-/* line 38, ../sass/screen.scss */
-.grid .col .module {
-  padding: 1em;
+/* line 51, ../sass/screen.scss */
+.ui .grid .col .module {
+  padding: 2vh;
   width: 100%;
   background-color: #ecf0f1;
-  border-radius: 0.25em;
   color: #bdc3c7;
   text-align: center;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
 }
-/* line 49, ../sass/screen.scss */
-.grid .col .test {
+/* line 61, ../sass/screen.scss */
+.ui .grid .col .test {
   background: url(../../assets/nyc.jpg);
   padding: 0;
   background-size: cover;
 }
-/* line 55, ../sass/screen.scss */
-.grid .col .test:before {
+/* line 67, ../sass/screen.scss */
+.ui .grid .col .test:before {
   padding-top: 177%;
   content: "";
   display: block;
