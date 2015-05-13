@@ -441,25 +441,15 @@ body, html {
   height: 100%;
 }
 
-/* line 26, ../sass/screen.scss */
-header {
-  position: fixed;
-  top: 0;
-  height: 10vh;
-  width: 100%;
-  background: black;
-}
-
-/* line 34, ../sass/screen.scss */
+/* line 29, ../sass/screen.scss */
 .ui {
-  margin-top: 12.5vh;
-  height: 90vh;
+  height: 100vh;
   background: red;
 }
-/* line 39, ../sass/screen.scss */
+/* line 33, ../sass/screen.scss */
 .ui .grid {
-  width: 95%;
-  max-width: 95%;
+  width: 100%;
+  max-width: 100%;
   margin: auto;
   background: yellow;
   display: -webkit-flex;
@@ -469,34 +459,23 @@ header {
   -webkit-flex-flow: row wrap;
   flex-flow: row wrap;
 }
-/* line 46, ../sass/screen.scss */
+/* line 40, ../sass/screen.scss */
 .ui .grid .col {
   display: -webkit-flex;
   display: flex;
   -webkit-flex: 1;
   flex: 1;
   padding: 1vh;
-  /* .test:before {
-       padding-top: 177%;
-       content: "";
-       display: block;
-   }*/
+  align-items: center;
 }
-/* line 51, ../sass/screen.scss */
+/* line 46, ../sass/screen.scss */
 .ui .grid .col .module {
-  padding: 2vh;
+  padding: 1vh;
   width: 100%;
   background-color: #ecf0f1;
   color: #bdc3c7;
   text-align: center;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
-  height: 23.333vh;
-  width: 15vh;
-}
-/* line 63, ../sass/screen.scss */
-.ui .grid .col .test {
-  background: url(../../assets/nyc.jpg);
-  padding: 0;
-  background-size: cover;
+  height: 29.333vh;
 }

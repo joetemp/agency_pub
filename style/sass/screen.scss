@@ -13,7 +13,7 @@
     padding: $padding;
 }  
 
-@mixin _module ($padding: 2vh) {
+@mixin _module ($padding: 1vh) {
     padding: $padding;
     width: 100%;
 }
@@ -24,20 +24,14 @@ body, html {
 }
 
 header {
-    position: fixed;
-    top: 0;
-    height: 10vh;
-    width: 100%;
-    background: black;
 }
 
 .ui {
-    margin-top: 12.5vh;
-    height: 90vh;
+    height: 100vh;
     background: red;
 
     .grid {
-        @include _grid(95%, 1280px, auto);
+        @include _grid(100%, 1280px, auto);
         background: yellow;
         @include display-flex;
         @include flex(1);
@@ -47,6 +41,7 @@ header {
             @include display-flex;
             @include flex(1);
             @include _col;
+            align-items: center;
 
             .module {
                 @include _module;
@@ -55,22 +50,8 @@ header {
                 text-align: center;
                 font-family: 'Roboto', sans-serif;
                 font-weight: 400;
-                height: 33.333vh - 10vh;
-                width: 15vh;
-
+                height: 29.333vh;
             }
-
-            .test {
-                background: url(../../assets/nyc.jpg);
-                padding: 0; 
-                background-size: cover;
-            }
-
-           /* .test:before {
-                padding-top: 177%;
-                content: "";
-                display: block;
-            }*/
         }
     }
 }
