@@ -436,17 +436,17 @@ th {
   padding: 0;
 }
 
-/* line 22, ../sass/screen.scss */
+/* line 13, ../sass/screen.scss */
 body, html {
   height: 100%;
 }
 
-/* line 29, ../sass/screen.scss */
+/* line 20, ../sass/screen.scss */
 .ui {
   height: 100vh;
   background: #533A71;
 }
-/* line 33, ../sass/screen.scss */
+/* line 24, ../sass/screen.scss */
 .ui .grid {
   width: 100%;
   max-width: 100%;
@@ -459,25 +459,23 @@ body, html {
   -webkit-flex-flow: row wrap;
   flex-flow: row wrap;
 }
-/* line 40, ../sass/screen.scss */
+/* line 31, ../sass/screen.scss */
 .ui .grid .col {
   display: -webkit-flex;
   display: flex;
   -webkit-flex: 1;
   flex: 1;
-  padding: 1vh;
   align-items: center;
 }
-/* line 46, ../sass/screen.scss */
+/* line 36, ../sass/screen.scss */
 .ui .grid .col .module {
-  padding: 1vh;
   width: 100%;
-  background: #6184DB;
+  background: #9B59B6;
   color: #bdc3c7;
   text-align: center;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
-  height: 29.333vh;
-  line-height: 29.333vh;
+  height: 33.333vh;
+  line-height: 33.333vh;
   box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.3);
 }
