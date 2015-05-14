@@ -443,10 +443,14 @@ body, html {
 
 /* line 20, ../sass/screen.scss */
 .ui {
-  height: 100vh;
+  position: absolute;
+  top: 5vh;
+  left: 5vw;
+  height: 90vh;
   background: #533A71;
+  width: 90vw;
 }
-/* line 24, ../sass/screen.scss */
+/* line 28, ../sass/screen.scss */
 .ui .grid {
   width: 100%;
   max-width: 100%;
@@ -458,24 +462,26 @@ body, html {
   flex: 1;
   -webkit-flex-flow: row wrap;
   flex-flow: row wrap;
+  height: 30vh;
 }
-/* line 31, ../sass/screen.scss */
+/* line 36, ../sass/screen.scss */
 .ui .grid .col {
   display: -webkit-flex;
   display: flex;
   -webkit-flex: 1;
   flex: 1;
   align-items: center;
+  align-content: space-around;
+  justify-content: space-around;
 }
-/* line 36, ../sass/screen.scss */
+/* line 43, ../sass/screen.scss */
 .ui .grid .col .module {
-  width: 100%;
+  width: 80%;
+  height: 80%;
   background: #9B59B6;
   color: #bdc3c7;
   text-align: center;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
-  height: 33.333vh;
-  line-height: 33.333vh;
   box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.3);
 }
