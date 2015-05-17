@@ -17,7 +17,19 @@ body, html {
 header {
 }
 
-.ui {
+main {
+    position: relative;
+    background: red;
+    height: 100%;
+    overflow: hidden;
+}
+
+section {
+    background: yellow;
+    height: 100%;
+}
+
+.ui-bank {
     position: absolute;
     top: 5vh;
     left: 5vw;
@@ -52,5 +64,22 @@ header {
             }
         }
     }
+}
+
+.ui {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: blue;
+    bottom: -100%;
+    transition: all 0.25s;
+}
+
+.swipe {
+    background: green;
+}
+
+.out {
+    bottom: 0;
 }
 

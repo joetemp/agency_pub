@@ -442,7 +442,21 @@ body, html {
 }
 
 /* line 20, ../sass/screen.scss */
-.ui {
+main {
+  position: relative;
+  background: red;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* line 27, ../sass/screen.scss */
+section {
+  background: yellow;
+  height: 100%;
+}
+
+/* line 32, ../sass/screen.scss */
+.ui-bank {
   position: absolute;
   top: 5vh;
   left: 5vw;
@@ -450,8 +464,8 @@ body, html {
   background: #533A71;
   width: 90vw;
 }
-/* line 28, ../sass/screen.scss */
-.ui .grid {
+/* line 40, ../sass/screen.scss */
+.ui-bank .grid {
   width: 100%;
   max-width: 100%;
   margin: auto;
@@ -464,8 +478,8 @@ body, html {
   flex-flow: row wrap;
   height: 30vh;
 }
-/* line 36, ../sass/screen.scss */
-.ui .grid .col {
+/* line 48, ../sass/screen.scss */
+.ui-bank .grid .col {
   display: -webkit-flex;
   display: flex;
   -webkit-flex: 1;
@@ -474,8 +488,8 @@ body, html {
   align-content: space-around;
   justify-content: space-around;
 }
-/* line 43, ../sass/screen.scss */
-.ui .grid .col .module {
+/* line 55, ../sass/screen.scss */
+.ui-bank .grid .col .module {
   width: 80%;
   height: 80%;
   background: #9B59B6;
@@ -484,4 +498,24 @@ body, html {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.3);
+}
+
+/* line 69, ../sass/screen.scss */
+.ui {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: blue;
+  bottom: -100%;
+  transition: all 0.25s;
+}
+
+/* line 78, ../sass/screen.scss */
+.swipe {
+  background: green;
+}
+
+/* line 82, ../sass/screen.scss */
+.out {
+  bottom: 0;
 }

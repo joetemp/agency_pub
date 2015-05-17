@@ -3,5 +3,6 @@ $( document ).ready(function() {
 
     $( ".test" ).on( "click", function() {
         console.log("Test has been clicked");
+        $( ".ui" ).addClass( "out" );
     });
 });
