@@ -511,11 +511,18 @@ section {
 }
 
 /* line 78, ../sass/screen.scss */
+#fuck {
+  background: green;
+  text-align: center;
+  color: white;
+}
+
+/* line 84, ../sass/screen.scss */
 .swipe {
   background: green;
 }
 
-/* line 82, ../sass/screen.scss */
+/* line 88, ../sass/screen.scss */
 .out {
   bottom: 0;
 }
