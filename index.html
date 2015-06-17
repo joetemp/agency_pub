@@ -14,16 +14,17 @@
         <section>
 
             <script>
-                var s = Snap(800, 600);
-                var bigCircle = s.circle(150, 150, 100);
+            
 
-                bigCircle.attr({
-                    class: 'fuck' 
-                });
+            var s = Snap(600, 600); 
+            s.attr({ viewBox: "0 0 600 600" });
+            s.attr({ class: 'resp'});
 
-                s.attr({
-                    class: 'test' 
-                });
+            //lets draw 2 rects at position 100,100 and then reposition them
+
+            var r = s.rect(100,100,100,100,20,20).attr({ stroke: '#123456', 'strokeWidth': 20, fill: 'red', 'opacity': 0.2 });
+
+            var t = s.text(0,50,'The svg element is set for 100% width, 100% height and has a viewBox');
             </script>
         </section>
         <section></section>
