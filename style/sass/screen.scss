@@ -17,6 +17,7 @@ header {
 }
 
 section {
+    position: relative;
     height: 100%;
 }
 
@@ -27,4 +28,27 @@ section:nth-of-type(2) {
 
 section:nth-of-type(3) {
     background: #ccc;
+}
+
+.test {
+    position: absolute;
+    top: 0;
+}
+
+.fuck {
+    position: absolute;
+    top: 0;
+    fill: none;
+    stroke: coral;
+    stroke-opacity: .5;
+    stroke-width: 10;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: dash 5s linear forwards;
+}
+
+@keyframes dash{
+    to{
+        stroke-dashoffset: 0; 
+    }
 }

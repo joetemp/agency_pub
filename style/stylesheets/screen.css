@@ -82,15 +82,41 @@ header {
 
 /* line 19, ../sass/screen.scss */
 section {
+  position: relative;
   height: 100%;
 }
 
-/* line 23, ../sass/screen.scss */
+/* line 24, ../sass/screen.scss */
 section:nth-of-type(2) {
   background: #eee;
 }
 
-/* line 28, ../sass/screen.scss */
+/* line 29, ../sass/screen.scss */
 section:nth-of-type(3) {
   background: #ccc;
+}
+
+/* line 33, ../sass/screen.scss */
+.test {
+  position: absolute;
+  top: 0;
+}
+
+/* line 38, ../sass/screen.scss */
+.fuck {
+  position: absolute;
+  top: 0;
+  fill: none;
+  stroke: coral;
+  stroke-opacity: .5;
+  stroke-width: 10;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 5s linear forwards;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
 }
