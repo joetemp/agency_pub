@@ -10,21 +10,21 @@
 </head>
 
     <body>
-        <header></header>
         <section>
-
+            <svg id="mysvg" width="100%" height="80%" viewBox="-0.25 -0.25 100 204.2"></svg>
             <script>
-            
+                
+                var s = Snap("#mysvg")
 
-            var s = Snap(600, 600); 
-            s.attr({ viewBox: "0 0 600 600" });
-            s.attr({ class: 'resp'});
+                var r = s.rect(0,0,100,203.7,14.64,14.64); 
 
-            //lets draw 2 rects at position 100,100 and then reposition them
+                r.attr({
+                    fill: "none",
+                    stroke: "#666",
+                    strokeWidth: 0.25, 
+                    class: "r"
+                });
 
-            var r = s.rect(100,100,100,100,20,20).attr({ stroke: '#123456', 'strokeWidth': 20, fill: 'red', 'opacity': 0.2 });
-
-            var t = s.text(0,50,'The svg element is set for 100% width, 100% height and has a viewBox');
             </script>
         </section>
         <section></section>
@@ -33,3 +33,5 @@
     </body>
 
 </html>
+
+<script src="js/test.js"></script>
