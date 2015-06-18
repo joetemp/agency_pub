@@ -104,7 +104,7 @@ section #mysvg {
   top: 10%;
 }
 /* line 41, ../sass/screen.scss */
-section #mysvg .r {
+section #mysvg .device {
   stroke-dasharray: 1000;
   stroke-dashoffset: 1000;
   animation: draw 2s ease-in forwards;
