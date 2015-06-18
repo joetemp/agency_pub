@@ -5,7 +5,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <link rel="stylesheet" type="text/css" href="style/stylesheets/screen.css">
-    <title>Spectrum Designs | Deal with it.</title>
+    <title>Project Spex | Deal with it.</title>
     <script src="js/snap.svg.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenLite.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/plugins/CSSPlugin.min.js"></script>
@@ -21,18 +21,26 @@
                 
                 var s = Snap("#mysvg")
 
-                var device = s.rect(0,0,100,203.7,14.64); 
+                var edge = s.rect(0,0,100,203.7,14.64); 
 
-                device.attr({
+                edge.attr({
                     fill: "none",
                     stroke: "#f33",
                     strokeWidth: 0.25, 
                     class: "device"
                 });
 
-                var edge = s.rect(1.5,1.5,97,200.85,13.32,13.32);
+                var face = s.rect(1.5,1.5,97,200.85,13.32,13.32);
 
-                edge.attr({
+                face.attr({
+                    fill: "none",
+                    stroke: "#f33",
+                    strokeWidth: 0.25
+                });
+
+                var glareOuter = s.rect(2.713, 3.1, 94.575, 197.5, 12.096)
+
+                glareOuter.attr({
                     fill: "none",
                     stroke: "#f33",
                     strokeWidth: 0.25
@@ -57,6 +65,30 @@
                 var buttonOuter = s.circle(50, 190.85, 6.6);
                 
                 buttonOuter.attr({
+                    fill: "none",
+                    stroke: "#f33",
+                    strokeWidth: 0.25
+                });
+
+                var cameraOuter = s.circle(36.125, 12.5, 1.7);
+
+                cameraOuter.attr({
+                    fill: "none",
+                    stroke: "#f33",
+                    strokeWidth: 0.25
+                });
+
+                var cameraInner = s.circle(36.125, 12.5, 1);
+
+                cameraInner.attr({
+                    fill: "none",
+                    stroke: "#f33",
+                    strokeWidth: 0.25
+                });
+
+                var speaker = s.rect(43.375, 12, 13.25, 1.25, 0.75);
+
+                speaker.attr({
                     fill: "none",
                     stroke: "#f33",
                     strokeWidth: 0.25

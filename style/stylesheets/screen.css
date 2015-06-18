@@ -96,7 +96,7 @@ section #iphone {
   top: 50%;
   margin-left: calc(-19.635vh - 1px);
   margin-top: -40vh;
-  opacity: 0.6;
+  opacity: 0;
 }
 /* line 37, ../sass/screen.scss */
 section #mysvg {
