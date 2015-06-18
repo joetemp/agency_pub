@@ -75,9 +75,8 @@ body, html {
 /* line 12, ../sass/screen.scss */
 section {
   height: 100%;
-  background: #222;
 }
-/* line 16, ../sass/screen.scss */
+/* line 15, ../sass/screen.scss */
 section #stencil {
   position: absolute;
   width: 39.27vh;
@@ -89,12 +88,12 @@ section #stencil {
   margin-left: -19.635vh;
   margin-top: -40vh;
 }
-/* line 28, ../sass/screen.scss */
+/* line 27, ../sass/screen.scss */
 section #mysvg {
   position: absolute;
   top: 10%;
 }
-/* line 32, ../sass/screen.scss */
+/* line 31, ../sass/screen.scss */
 section #mysvg .r {
   stroke-dasharray: 1000;
   stroke-dashoffset: 1000;
@@ -105,17 +104,17 @@ section #mysvg .r {
     stroke-dashoffset: 0;
   }
 }
-/* line 46, ../sass/screen.scss */
+/* line 45, ../sass/screen.scss */
 section:nth-of-type(1) {
-  background: #222;
+  background: #fff;
 }
 
-/* line 50, ../sass/screen.scss */
+/* line 49, ../sass/screen.scss */
 section:nth-of-type(2) {
   background: #444;
 }
 
-/* line 54, ../sass/screen.scss */
+/* line 53, ../sass/screen.scss */
 section:nth-of-type(3) {
   background: #666;
 }

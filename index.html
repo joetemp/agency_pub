@@ -7,6 +7,9 @@
     <link rel="stylesheet" type="text/css" href="style/stylesheets/screen.css">
     <title>Spectrum Designs | Deal with it.</title>
     <script src="js/snap.svg.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenLite.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/plugins/CSSPlugin.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/plugins/RaphaelPlugin.min.js"></script>
 </head>
 
     <body>
@@ -14,13 +17,14 @@
             <svg id="mysvg" width="100%" height="80%" viewBox="-0.25 -0.25 100 204.2"></svg>
             <script>
                 
+                
                 var s = Snap("#mysvg")
 
-                var r = s.rect(0,0,100,203.7,14.64,14.64); 
+                var r = s.rect(0,0,100,203.7,14.64); 
 
                 r.attr({
                     fill: "none",
-                    stroke: "#666",
+                    stroke: "#111",
                     strokeWidth: 0.25, 
                     class: "r"
                 });
@@ -29,7 +33,15 @@
 
                 r1.attr({
                     fill: "none",
-                    stroke: "#666",
+                    stroke: "#111",
+                    strokeWidth: 0.25
+                });
+
+                var r2 = s.rect(6.2, 24.13, 87.6, 155.44);
+
+                r2.attr({
+                    fill: "none",
+                    stroke: "#111",
                     strokeWidth: 0.25
                 });
 
