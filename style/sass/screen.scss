@@ -29,7 +29,7 @@ section {
         height: 80vh;
         left: 50%;
         top: 50%;
-        margin-left: -19.635vh;
+        margin-left: calc(-19.635vh - 1px);
         margin-top: -40vh;
         opacity: 0.6;
     }

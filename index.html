@@ -30,27 +30,35 @@
                     class: "r"
                 });
 
-                var r1 = s.rect(1.5,1.5,97,200.85,13.32,13.32);
+                var edge = s.rect(1.5,1.5,97,200.85,13.32,13.32);
 
-                r1.attr({
+                edge.attr({
                     fill: "none",
                     stroke: "#f33",
                     strokeWidth: 0.25
                 });
 
-                var r2 = s.rect(6.2, 24.13, 87.6, 155.44);
+                var display = s.rect(6.2, 23.8, 87.6, 156.4);
 
-                r2.attr({
+                display.attr({
                     fill: "none",
                     stroke: "#f33",
                     strokeWidth: 0.25
                 });
 
-                var c = s.circle(50, 190, 6);
+                var buttonInner = s.circle(50, 190.85, 5.8);
 
-                c.attr({
+                buttonInner.attr({
                     fill: "none",
-                    stroke: "#111",
+                    stroke: "#f33",
+                    strokeWidth: 0.25
+                });
+
+                var buttonOuter = s.circle(50, 190.85, 6.6);
+                
+                buttonOuter.attr({
+                    fill: "none",
+                    stroke: "#f33",
                     strokeWidth: 0.25
                 });
 
