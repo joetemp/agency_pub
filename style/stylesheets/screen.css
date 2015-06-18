@@ -89,11 +89,21 @@ section #stencil {
   margin-top: -40vh;
 }
 /* line 27, ../sass/screen.scss */
+section #iphone {
+  position: absolute;
+  height: 80vh;
+  left: 50%;
+  top: 50%;
+  margin-left: -19.635vh;
+  margin-top: -40vh;
+  opacity: 0.6;
+}
+/* line 37, ../sass/screen.scss */
 section #mysvg {
   position: absolute;
   top: 10%;
 }
-/* line 31, ../sass/screen.scss */
+/* line 41, ../sass/screen.scss */
 section #mysvg .r {
   stroke-dasharray: 1000;
   stroke-dashoffset: 1000;
@@ -104,17 +114,17 @@ section #mysvg .r {
     stroke-dashoffset: 0;
   }
 }
-/* line 45, ../sass/screen.scss */
+/* line 55, ../sass/screen.scss */
 section:nth-of-type(1) {
   background: #fff;
 }
 
-/* line 49, ../sass/screen.scss */
+/* line 59, ../sass/screen.scss */
 section:nth-of-type(2) {
   background: #444;
 }
 
-/* line 53, ../sass/screen.scss */
+/* line 63, ../sass/screen.scss */
 section:nth-of-type(3) {
   background: #666;
 }

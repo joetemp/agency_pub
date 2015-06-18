@@ -14,6 +14,7 @@
 
     <body>
         <section>
+            <img src="assets/iphone-6-plus.jpg" id="iphone">
             <svg id="mysvg" width="100%" height="80%" viewBox="-0.25 -0.25 100 204.2"></svg>
             <script>
                 
@@ -24,7 +25,7 @@
 
                 r.attr({
                     fill: "none",
-                    stroke: "#111",
+                    stroke: "#f33",
                     strokeWidth: 0.25, 
                     class: "r"
                 });
@@ -33,13 +34,21 @@
 
                 r1.attr({
                     fill: "none",
-                    stroke: "#111",
+                    stroke: "#f33",
                     strokeWidth: 0.25
                 });
 
                 var r2 = s.rect(6.2, 24.13, 87.6, 155.44);
 
                 r2.attr({
+                    fill: "none",
+                    stroke: "#f33",
+                    strokeWidth: 0.25
+                });
+
+                var c = s.circle(50, 190, 6);
+
+                c.attr({
                     fill: "none",
                     stroke: "#111",
                     strokeWidth: 0.25
