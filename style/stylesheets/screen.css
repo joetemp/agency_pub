@@ -102,8 +102,10 @@ section #iphone {
 section #mysvg {
   position: absolute;
   top: 10%;
+  width: 100%;
+  height: 80%;
 }
-/* line 41, ../sass/screen.scss */
+/* line 43, ../sass/screen.scss */
 section #mysvg .device {
   stroke-dasharray: 1000;
   stroke-dashoffset: 1000;
@@ -114,17 +116,17 @@ section #mysvg .device {
     stroke-dashoffset: 0;
   }
 }
-/* line 55, ../sass/screen.scss */
+/* line 57, ../sass/screen.scss */
 section:nth-of-type(1) {
   background: #fff;
 }
 
-/* line 59, ../sass/screen.scss */
+/* line 61, ../sass/screen.scss */
 section:nth-of-type(2) {
   background: #444;
 }
 
-/* line 63, ../sass/screen.scss */
+/* line 65, ../sass/screen.scss */
 section:nth-of-type(3) {
   background: #666;
 }

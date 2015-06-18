@@ -15,7 +15,7 @@
     <body>
         <section>
             <img src="assets/iphone-6-plus.jpg" id="iphone">
-            <svg id="mysvg" width="100%" height="80%" viewBox="-0.25 -0.25 100 204.2"></svg>
+            <svg id="mysvg" viewBox="-0.25 -0.25 100 204.2"></svg>
             <script>
                 
                 
@@ -38,9 +38,17 @@
                     strokeWidth: 0.25
                 });
 
-                var glareOuter = s.rect(2.713, 3.1, 94.575, 197.5, 12.096)
+                var glare = s.rect(2.713, 3.1, 94.575, 197.5, 12.096)
 
-                glareOuter.attr({
+                glare.attr({
+                    fill: "none",
+                    stroke: "#f33",
+                    strokeWidth: 0.25
+                });
+
+                var bezel = s.rect(3.90, 4.67, 92.21, 194.37, 11.46) 
+
+                bezel.attr({
                     fill: "none",
                     stroke: "#f33",
                     strokeWidth: 0.25
