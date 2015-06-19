@@ -21,11 +21,13 @@
                 
                 var s = Snap("#mysvg")
 
+                var edgeG = s.gradient("L(0, 0, 0, 100)#68696e-#47484b");
+
                 var edge = s.rect(0,0,100,203.7,14.64); 
 
                 edge.attr({
-                    fill: "none",
-                    stroke: "#f33",
+                    fill: edgeG,
+                    stroke: "none",
                     strokeWidth: 0.25, 
                     class: "device"
                 });
@@ -33,14 +35,30 @@
                 var face = s.rect(1.5,1.5,97,200.85,13.32,13.32);
 
                 face.attr({
-                    fill: "none",
-                    stroke: "#f33",
+                    fill: "#000",
+                    stroke: "none",
                     strokeWidth: 0.25
                 });
 
                 var glare = s.rect(2.713, 3.1, 94.575, 197.5, 12.096)
 
                 glare.attr({
+                    fill: "none",
+                    stroke: "#f33",
+                    strokeWidth: 0.25
+                });
+
+                var horizontalFade = s.rect(2.713, 42.8, 94.575, 118.01)
+
+                horizontalFade.attr({
+                    fill: "none",
+                    stroke: "#f33",
+                    strokeWidth: 0.25
+                });
+
+                var verticalFade = s.rect(2.713, 3.1, 94.575, 197.5, 12.096)
+
+                verticalFade.attr({
                     fill: "none",
                     stroke: "#f33",
                     strokeWidth: 0.25
