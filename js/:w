@@ -1,11 +1,11 @@
     var s = Snap("#mysvg")
 
-    var edgeG = s.gradient("L(0, 0, 0, 100)rgba(255, 51, 0, 1)-#47484b");
+    var edgeG = s.gradient("L(0, 0, 0, 100)#68696e-#47484b");
 
     var edge = s.rect(0,0,100,203.7,14.64); 
 
     edge.attr({
-        class: "edge",
+        class: "edge,"
         fill: edgeG
     });
 
