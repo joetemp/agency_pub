@@ -18,7 +18,7 @@
             fill: glareGradient
         });
     
-    var testG = s.gradient("L(0, 50, 0, 150)rgba(0, 234, 0, 0)-rgba(0, 234, 0, 1):50-rgba(0, 234, 0, 0)");
+    var testG = s.gradient("l(0, 0, 0, 1)rgba(0, 0, 0, 0)-rgba(0, 0, 0, 1):20-rgba(0, 0, 0, 0.8):80-rgba(0, 0, 0, 0)");
     var horizontalFade = s.rect(2.713, 42.8, 94.575, 118.01);
 
     horizontalFade.attr({
