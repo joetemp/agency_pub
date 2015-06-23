@@ -69,7 +69,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 /* line 1, ../sass/_iphone.scss */
 .edge {
-  stroke: blue;
+  stroke: none;
   stroke-width: 0.25;
 }
 
