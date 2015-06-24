@@ -37,23 +37,33 @@
     display.attr({
         fill: "#191919",
     });
+    
+    var buttonOuter = s.circle(50, 190.85, 6.6).attr({
+        fill: "#111",
+    });
 
-    var buttonInner = s.circle(50, 190.85, 5.8);
+    var buttonMask = s.circle(50, 190.85, 6.6);
+   
+    var buttonGlareGradient = s.gradient("r(0.5, 0.5, 0.5)rgba(255, 255, 255, 0.35)-rgba(255, 255, 255, 0)");
+
+    var buttonGlareR = s.circle(56, 191.85, 6.6).attr({
+        fill: buttonGlareGradient,
+    });
+
+    var buttonGlareL = s.circle(43, 196.85, 6.6).attr({
+        fill: buttonGlareGradient
+    });
+
+    var buttonGlareGroup = s.group(buttonGlareR, buttonGlareL).attr({
+        clip: buttonMask
+    });
+
+    var buttonInner = s.circle(50, 190.85, 5.9);
 
     buttonInner.attr({
-        fill: "none",
-        stroke: "#f33",
-        strokeWidth: 0.25
+        fill: "#000",
     });
-
-    var buttonOuter = s.circle(50, 190.85, 6.6);
     
-    buttonOuter.attr({
-        fill: "none",
-        stroke: "#f33",
-        strokeWidth: 0.25
-    });
-
     var cameraOuterGradient = s.gradient("r(0.75, 0.75, 0.65)#696969-#1f1f1f"),
         cameraOuter = s.circle(36.125, 12.5, 1.5).attr({
             fill: cameraOuterGradient,
