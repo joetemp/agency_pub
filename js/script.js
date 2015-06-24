@@ -18,31 +18,24 @@
             fill: glareGradient
         });
     
-    var testG = s.gradient("l(0, 0, 0, 1)rgba(0, 0, 0, 0)-rgba(0, 0, 0, 1):20-rgba(0, 0, 0, 0.8):80-rgba(0, 0, 0, 0)");
-    var horizontalFade = s.rect(2.713, 42.8, 94.575, 118.01);
+    var horizontalFadeGradient = s.gradient("l(0, 0, 0, 1)rgba(0, 0, 0, 0)-rgba(0, 0, 0, 1):20-rgba(0, 0, 0, 0.8):80-rgba(0, 0, 0, 0)"),
+        horizontalFade = s.rect(2.713, 42.8, 94.575, 118.01).attr({
+            fill: horizontalFadeGradient 
+        });
 
-    horizontalFade.attr({
-        fill: testG,
-    });
+    var verticalFadeGradient = s.gradient("l(0, 0, 1, 0)rgba(0, 0, 0, 0)-rgba(0, 0, 0, 1):10-rgba(0, 0, 0, 0.8):90-rgba(0, 0, 0, 0)"),
+        verticalFade = s.rect(2.713, 3.1, 94.575, 197.5, 12.096).attr({
+            fill: verticalFadeGradient 
+        });
 
-    var verticalFade = s.rect(2.713, 3.1, 94.575, 197.5, 12.096)
-
-    verticalFade.attr({
-        fill: "none",
-    });
-
-    var bezel = s.rect(3.90, 4.67, 92.21, 194.37, 11.46) 
-
-    bezel.attr({
-        fill: "#000",
+    var bezel = s.rect(3.90, 4.67, 92.21, 194.37, 11.46).attr({
+        fill: "#000" 
     });
 
     var display = s.rect(6.2, 23.8, 87.6, 156.4);
 
     display.attr({
-        fill: "none",
-        stroke: "#f33",
-        strokeWidth: 0.25
+        fill: "#191919",
     });
 
     var buttonInner = s.circle(50, 190.85, 5.8);
@@ -61,21 +54,16 @@
         strokeWidth: 0.25
     });
 
-    var cameraOuter = s.circle(36.125, 12.5, 1.7);
+    var cameraOuterGradient = s.gradient("r(0.8, 0.8, 0.75)#5b5b5b-#1f1f1f"),
+        cameraOuter = s.circle(36.125, 12.5, 1.7).attr({
+            fill: cameraOuterGradient
+        });
 
-    cameraOuter.attr({
-        fill: "none",
-        stroke: "#f33",
-        strokeWidth: 0.25
-    });
 
-    var cameraInner = s.circle(36.125, 12.5, 1);
-
-    cameraInner.attr({
-        fill: "none",
-        stroke: "#f33",
-        strokeWidth: 0.25
-    });
+    var cameraInnerGradient = s.gradient("r(0.25, 0.25, 0.6)#365292-#4f3996:20-#0f141a"),
+        cameraInner = s.circle(36.125, 12.5, 1).attr({
+            fill: cameraInnerGradient
+        });
 
     var speaker = s.rect(43.375, 12, 13.25, 1.25, 0.75);
 
