@@ -54,21 +54,19 @@
         strokeWidth: 0.25
     });
 
-    var cameraOuterGradient = s.gradient("r(0.8, 0.8, 0.75)#5b5b5b-#1f1f1f"),
-        cameraOuter = s.circle(36.125, 12.5, 1.7).attr({
+    var cameraOuterGradient = s.gradient("r(0.75, 0.75, 0.65)#696969-#1f1f1f"),
+        cameraOuter = s.circle(36.125, 12.5, 1.5).attr({
             fill: cameraOuterGradient
         });
 
 
-    var cameraInnerGradient = s.gradient("r(0.25, 0.25, 0.6)#365292-#4f3996:20-#0f141a"),
-        cameraInner = s.circle(36.125, 12.5, 1).attr({
+    var cameraInnerGradient = s.gradient("r(0.25, 0.25, 0.6)#365292-#0f141a"),
+        cameraInner = s.circle(36.125, 12.5, 0.8).attr({
             fill: cameraInnerGradient
         });
 
     var speaker = s.rect(43.375, 12, 13.25, 1.25, 0.75);
 
     speaker.attr({
-        fill: "none",
-        stroke: "#f33",
-        strokeWidth: 0.25
+        fill: "#393A3A",
     });
