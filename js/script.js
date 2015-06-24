@@ -82,14 +82,14 @@
     });
 
 
-    var speakerGradient = s.gradient("l(0, 0, 0, 1)#686868-#383838-#282828"),
+    var speakerGradient = s.gradient("l(0, 0, 0, 1)#585858-#383838-#282828"),
         speaker = s.rect(43.375, 12, 13.25, 1.25, 0.75).attr({
         fill: speakerGradient
     });
 
-    var holes = s.circle(0.125, 0.125, 0.1).attr({
+    var holes = s.circle(0.1875, 0.1875, 0.1).attr({
         fill: "#222"
-    }).pattern(0, 0, 0.25, 0.25),
+    }).pattern(0, 0, 0.375, 0.375),
     speakerPattern = s.rect(43.375, 12, 13.25, 1.25, 0.75).attr({
         fill: holes
     });
