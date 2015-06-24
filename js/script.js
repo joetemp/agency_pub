@@ -56,14 +56,31 @@
 
     var cameraOuterGradient = s.gradient("r(0.75, 0.75, 0.65)#696969-#1f1f1f"),
         cameraOuter = s.circle(36.125, 12.5, 1.5).attr({
-            fill: cameraOuterGradient
+            fill: cameraOuterGradient,
         });
 
 
-    var cameraInnerGradient = s.gradient("r(0.25, 0.25, 0.6)#365292-#0f141a"),
+    var cameraInnerGradient = s.gradient("r(0.25, 0.25, 0.6)#263B72-#0f141a"),
         cameraInner = s.circle(36.125, 12.5, 0.8).attr({
             fill: cameraInnerGradient
         });
+
+    var lensMask = s.circle(36.125, 12.5, 0.8).attr({
+    });
+
+    var blueGlare = s.circle(35.65, 11.5, 0.8).attr({
+       fill: "#38508C" 
+      // fill: "red"
+    });
+
+    var whiteGlare = s.circle(35.53, 12.6, 0.225).attr({
+        fill: "#6997BB"
+    });
+
+    var glareGroup = s.group(blueGlare, whiteGlare).attr({
+        clip: lensMask
+    });
+
 
     var speaker = s.rect(43.375, 12, 13.25, 1.25, 0.75);
 
