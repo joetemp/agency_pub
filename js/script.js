@@ -6,7 +6,7 @@
             fill: edgeGradient
         });
 
-    var faceFilter = s.filter(Snap.filter.shadow(0, 0, 1.5, "#a3a5aa", 0.9)),
+    var faceFilter = s.filter(Snap.filter.shadow(0, 0, 1.5, "#fff", 0.8)),
         face = s.rect(1.5, 1.5, 97, 200.85, 13.32, 13.32).attr({
             class: "face",
             fill: "#000",
