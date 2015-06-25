@@ -6,6 +6,24 @@
             fill: edgeGradient
         });
 
+    var squareTL = s.rect(0, 14, 3, 3).attr({
+        fill: "rgba(0, 0, 0, 0.3)" 
+    });
+
+    
+    var squareTR = s.rect(97, 14, 3, 3).attr({
+        fill: "rgba(0, 0, 0, 0.3)" 
+    });
+
+
+    var squareBL = s.rect(0, 186.7, 3, 3).attr({
+        fill: "rgba(0, 0, 0, 0.3)" 
+    });
+
+    var squareBR = s.rect(97, 186.7, 3, 3).attr({
+        fill: "rgba(0, 0, 0, 0.3)" 
+    });
+
     var faceFilter = s.filter(Snap.filter.shadow(0, 0, 1.5, "#fff", 0.8)),
         face = s.rect(1.5, 1.5, 97, 200.85, 13.32, 13.32).attr({
             class: "face",
