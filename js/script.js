@@ -13,7 +13,7 @@
             filter: faceFilter
         });
     
-    var glareGradient = s.gradient("L(0, 0, 0, 100)rgba(255, 255, 255, 0.15)-rgba(255, 255, 255, 0.075)"),
+    var glareGradient = s.gradient("l(0, 0, 1, 0.8)rgba(255, 255, 255, 0.18)-rgba(255, 255, 255, 0.09)"),
         glare = s.rect(2.713, 3.1, 94.575, 197.5, 12.096).attr({
             fill: glareGradient
         });
