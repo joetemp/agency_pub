@@ -1,12 +1,12 @@
     var s = Snap("#mysvg")
 
-    var edgeGradient = s.gradient("L(0, 0, 0, 100)rgba(104, 105, 110, 1)-rgba(71, 72, 75, 1)"),
+    var edgeGradient = s.gradient("l(0, 0, 0, 1)#68696e-#47484b"),
         edge = s.rect(0, 0, 100, 203.7, 14.64).attr({
             class: "edge",
             fill: edgeGradient
         });
 
-    var faceFilter = s.filter(Snap.filter.shadow(0, 0, 1, "#a3a5aa", 0.9)),
+    var faceFilter = s.filter(Snap.filter.shadow(0, 0, 1.5, "#a3a5aa", 0.9)),
         face = s.rect(1.5, 1.5, 97, 200.85, 13.32, 13.32).attr({
             class: "face",
             fill: "#000",
