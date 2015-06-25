@@ -36,37 +36,38 @@
 
 
     var faceFilter = s.filter(Snap.filter.shadow(0, 0, 1.5, "#fff", 0.85)),
-        face = s.rect(1.5, 1.5, 97, 200.85, 13.32, 13.32).attr({
+        face = s.rect(1.5, 1.5, 97, 201, 13.32, 13.32).attr({
             class: "face",
             fill: "#000",
             filter: faceFilter
         });
     
     var glareGradient = s.gradient("l(0, 0, 1, 0.8)rgba(255, 255, 255, 0.18)-rgba(255, 255, 255, 0.09)"),
-        glare = s.rect(2.713, 3.1, 94.575, 197.5, 12.096).attr({
+        glare = s.rect(2.713, 3.1, 94.575, 197.8, 12.096).attr({
             fill: glareGradient
         });
     
     var horizontalFadeGradient = s.gradient("l(0, 0, 0, 1)rgba(0, 0, 0, 0)-rgba(0, 0, 0, 1):20-rgba(0, 0, 0, 0.8):80-rgba(0, 0, 0, 0)"),
-        horizontalFade = s.rect(2.713, 42.8, 94.575, 118.01).attr({
+        horizontalFade = s.rect(2.713, 43.1, 94.575, 118.01).attr({
             fill: horizontalFadeGradient 
         });
 
     var verticalFadeGradient = s.gradient("l(0, 0, 1, 0)rgba(0, 0, 0, 0)-rgba(0, 0, 0, 1):10-rgba(0, 0, 0, 0.8):90-rgba(0, 0, 0, 0)"),
-        verticalFade = s.rect(2.713, 3.1, 94.575, 197.5, 12.096).attr({
+        verticalFade = s.rect(2.713, 3.1, 94.575, 197.8, 12.096).attr({
             fill: verticalFadeGradient 
         });
 
-    var bezel = s.rect(3.90, 4.67, 92.21, 194.37, 11.46).attr({
+    var bezel = s.rect(3.90, 4.67, 92.21, 194.67, 11.46).attr({
         fill: "#000" 
     });
 
-    var display = s.rect(6.2, 23.8, 87.6, 156.4);
+    var display = s.rect(6.2, 23.5, 87.6, 157);
 
     display.attr({
         fill: "#191919",
     });
-    
+
+    //var buttonOuter = s.circle(50, 190.85, 6.6).attr({
     var buttonOuter = s.circle(50, 190.85, 6.6).attr({
         fill: "#111",
     });
