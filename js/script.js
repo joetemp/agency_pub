@@ -92,7 +92,7 @@
     });
 
 
-    var speakerGradient = s.gradient("l(0, 0, 0, 1)#585858-#383838-#282828"),
+    var speakerGradient = s.gradient("l(0, 0, 0, 1)#383838-#484848-#282828"),
         speaker = s.rect(43.375, 12, 13.25, 1.25, 0.75).attr({
         fill: speakerGradient
     });
