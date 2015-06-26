@@ -1,7 +1,7 @@
     var s = Snap("#mysvg")
 
     var edgeGradient = s.gradient("l(0, 0, 0, 1)#68696e-#47484b"),
-        edge = s.rect(0, 0, 100, 204, 14.64).attr({
+        edge = s.rect(0, 0, 102, 204, 14.64).attr({
             class: "edge",
             fill: edgeGradient
         });
@@ -11,31 +11,28 @@
 
     var circle = s.rect(44, 203.6, 12, 1.25, 2.5).attr({fill: "black"}).appendTo(group);
 
-    
-    //speaker = s.rect(43.375, 12, 13.25, 1.25, 0.75).attr({
-
     edge.attr({mask: group});
 
     var squareTL = s.rect(0, 14, 3, 3).attr({
-        fill: "rgba(0, 0, 0, 0.3)" 
+        fill: "rgba(0, 0, 0, 0.5)" 
     });
 
     
     var squareTR = s.rect(97, 14, 3, 3).attr({
-        fill: "rgba(0, 0, 0, 0.3)" 
+        fill: "rgba(0, 0, 0, 0.5)" 
     });
 
 
     var squareBL = s.rect(0, 186.7, 3, 3).attr({
-        fill: "rgba(0, 0, 0, 0.3)" 
+        fill: "rgba(0, 0, 0, 0.5)" 
     });
 
     var squareBR = s.rect(97, 186.7, 3, 3).attr({
-        fill: "rgba(0, 0, 0, 0.3)" 
+        fill: "rgba(0, 0, 0, 0.5)" 
     });
 
 
-    var faceFilter = s.filter(Snap.filter.shadow(0, 0, 1.5, "#fff", 0.85)),
+    var faceFilter = s.filter(Snap.filter.shadow(0, 0, 1, "#fff", 1)),
         face = s.rect(1.5, 1.5, 97, 201, 13.32, 13.32).attr({
             class: "face",
             fill: "#000",
@@ -127,7 +124,7 @@
         fill: speakerGradient
     });
 
-    var holes = s.circle(0.1875, 0.1875, 0.1).attr({
+    var holes = s.circle(0.15, 0.15, 0.15).attr({
         fill: "#222"
     }).pattern(0, 0, 0.375, 0.375),
     speakerPattern = s.rect(43.375, 12, 13.25, 1.25, 0.75).attr({

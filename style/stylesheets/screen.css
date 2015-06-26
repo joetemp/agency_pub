@@ -103,26 +103,38 @@ section #iphone {
   margin-left: calc(-19.635vh - 1px);
   margin-top: -40vh;
   opacity: 0;
+  display: none;
 }
-/* line 39, ../sass/screen.scss */
+/* line 40, ../sass/screen.scss */
+section #iphone_ref {
+  position: absolute;
+  height: 80vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.2;
+  display: none;
+}
+/* line 50, ../sass/screen.scss */
 section #mysvg {
   position: absolute;
-  top: 10%;
-  width: 100%;
-  height: 80%;
+  top: 50%;
+  left: 50%;
+  width: 20%;
+  transform: translate(-50%, -50%);
 }
 
-/* line 47, ../sass/screen.scss */
+/* line 60, ../sass/screen.scss */
 section:nth-of-type(1) {
   background: #fff;
 }
 
-/* line 51, ../sass/screen.scss */
+/* line 64, ../sass/screen.scss */
 section:nth-of-type(2) {
   background: #444;
 }
 
-/* line 55, ../sass/screen.scss */
+/* line 68, ../sass/screen.scss */
 section:nth-of-type(3) {
   background: #666;
 }
