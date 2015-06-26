@@ -108,14 +108,13 @@ section #iphone {
 /* line 40, ../sass/screen.scss */
 section #iphone_ref {
   position: absolute;
-  height: 80vh;
+  width: 20%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   opacity: 0.2;
-  display: none;
 }
-/* line 50, ../sass/screen.scss */
+/* line 49, ../sass/screen.scss */
 section #mysvg {
   position: absolute;
   top: 50%;
@@ -124,17 +123,17 @@ section #mysvg {
   transform: translate(-50%, -50%);
 }
 
-/* line 60, ../sass/screen.scss */
+/* line 59, ../sass/screen.scss */
 section:nth-of-type(1) {
   background: #fff;
 }
 
-/* line 64, ../sass/screen.scss */
+/* line 63, ../sass/screen.scss */
 section:nth-of-type(2) {
   background: #444;
 }
 
-/* line 68, ../sass/screen.scss */
+/* line 67, ../sass/screen.scss */
 section:nth-of-type(3) {
   background: #666;
 }
