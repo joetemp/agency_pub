@@ -37,13 +37,14 @@ section {
         display: none;
     }
 
-    #iphone_ref{
+    #guide{
         position: absolute;
         width: 20%; 
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
         opacity: 0.2;
+        display: none;
     }
 
     #mysvg {
@@ -57,7 +58,7 @@ section {
 }
 
 section:nth-of-type(1){
-    background: #fff;
+    background: aquamarine;
 }
 
 section:nth-of-type(2){
