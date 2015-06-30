@@ -15,6 +15,12 @@
 
     edge.attr({mask: group});
 
+    var edgeCorrectSize = s.rect(0, 0, 100, 207.5, 14.64).attr({
+        stroke: "red",
+        strokeWidth: 0.25,
+        fill: "none"    
+    });
+
     var squareTL = s.rect(0, 14, 3, 3).attr({
         //fill: "rgba(0, 0, 0, 0.5)" 
         fill: "none"
@@ -47,6 +53,13 @@
             // UNCOMMENT!
             //filter: faceFilter
         });
+
+    var faceCorrectSize = s.rect(1.3, 1.3, 97.4, 204.8, 13.32, 13.32).attr({
+        stroke: "red", 
+        strokeWidth: 0.25, 
+        fill: "none"
+    
+    });
     
     var glareGradient = s.gradient("l(0, 0, 1, 0.8)rgba(255, 255, 255, 0.18)-rgba(255, 255, 255, 0.09)"),
         glare = s.rect(2.713, 3.1, 94.575, 197.8, 12.096).attr({
