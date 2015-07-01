@@ -54,12 +54,12 @@
             //filter: faceFilter
         });
 
-    var faceCorrectSize = s.rect(1.3, 1.3, 97.4, 204.8, 13.32, 13.32).attr({
+    var faceCorrectSize = s.rect(1.3, 1.3, 97.4, 204.9, 13.32, 13.32).attr({
         stroke: "red", 
         strokeWidth: 0.25, 
         fill: "none"
     
-    });
+        });
     
     var glareGradient = s.gradient("l(0, 0, 1, 0.8)rgba(255, 255, 255, 0.18)-rgba(255, 255, 255, 0.09)"),
         glare = s.rect(2.713, 3.1, 94.575, 197.8, 12.096).attr({
@@ -67,13 +67,19 @@
             //fill: glareGradient
             fill: "none"
         });
+
+    var glareCorrectSize = s.rect(2.1, 2.6, 95.8, 202.3, 12.096).attr({
+        stroke: "red",
+        strokeWidth: 0.25,
+        fill: "none"
+    });
     
     var horizontalFadeGradient = s.gradient("l(0, 0, 0, 1)rgba(0, 0, 0, 0)-rgba(0, 0, 0, 1):20-rgba(0, 0, 0, 0.8):80-rgba(0, 0, 0, 0)"),
         horizontalFade = s.rect(2.713, 43.1, 94.575, 118.01).attr({
             // UNCOMMENT!
             //fill: horizontalFadeGradient 
             fill: "none"
-        });
+    });
 
     var verticalFadeGradient = s.gradient("l(0, 0, 1, 0)rgba(0, 0, 0, 0)-rgba(0, 0, 0, 1):10-rgba(0, 0, 0, 0.8):90-rgba(0, 0, 0, 0)"),
         verticalFade = s.rect(2.713, 3.1, 94.575, 197.8, 12.096).attr({
