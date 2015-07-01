@@ -115,6 +115,12 @@
         fill: "none"
     });
 
+    var buttonOuterCorrectSize = s.circle(50, 194.2, 7.8).attr({
+        stroke: "red",
+        strokeWidth: 0.25,
+        fill: "none"
+    });
+
     var buttonMask = s.circle(50, 190.85, 6.6);
    
     var buttonGlareGradient = s.gradient("r(0.5, 0.5, 0.5)rgba(255, 255, 255, 0.35)-rgba(255, 255, 255, 0)");
@@ -140,6 +146,12 @@
     buttonInner.attr({
         //UNCOMMENT!
         //fill: "#000",
+        fill: "none"
+    });
+
+    var buttonInnerCorrectSize = s.circle(50, 194.2 , 6.9).attr({
+        stroke: "red",
+        strokeWidth: 0.25, 
         fill: "none"
     });
     
