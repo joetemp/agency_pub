@@ -150,6 +150,12 @@
             fill: "none"
         });
 
+    var cameraOuterCorrectSize = s.circle(33.8, 12.875, 1.8).attr({
+        stroke: "red",
+        strokeWidth: 0.25,
+        fill: "none"
+    });
+
 
     var cameraInnerGradient = s.gradient("r(0.25, 0.25, 0.6)#263B72-#0f141a"),
         cameraInner = s.circle(36.125, 12.5, 0.8).attr({
@@ -157,6 +163,12 @@
             //fill: cameraInnerGradient
             fill: "none"
         });
+
+    var cameraInnerCorrectSize = s.circle(33.8, 12.875, 1).attr({
+        stroke: "red",
+        strokeWidth: 0.25,
+        fill: "none"
+    });
 
     var lensMask = s.circle(36.125, 12.5, 0.8).attr({
     });
