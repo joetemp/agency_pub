@@ -88,6 +88,12 @@
             fill: "none"
         });
 
+    var verticalFadeCorrectSize = s.rect(2.1, 2.6, 95.8, 202.3, 12.096).attr({
+        stroke: "blue",
+        strokeWidth: 0.25,
+        fill: "none"
+    });
+
     var bezel = s.rect(3.90, 4.67, 92.21, 194.67, 11.46).attr({
         // UNCOMMENT!
         //fill: "#000" 
@@ -162,7 +168,7 @@
             fill: "none"
         });
 
-    var cameraOuterCorrectSize = s.circle(33.8, 12.875, 1.8).attr({
+    var cameraOuterCorrectSize = s.circle(33.8, 12.875, 1.7).attr({
         stroke: "red",
         strokeWidth: 0.25,
         fill: "none"
@@ -176,7 +182,7 @@
             fill: "none"
         });
 
-    var cameraInnerCorrectSize = s.circle(33.8, 12.875, 1).attr({
+    var cameraInnerCorrectSize = s.circle(33.8, 12.875, 0.95).attr({
         stroke: "red",
         strokeWidth: 0.25,
         fill: "none"
