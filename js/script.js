@@ -185,7 +185,7 @@
         fill: "none"
     });
 
-    var speakerCorrectSize = s.rect(1.3 + 0.8 + 1.3 + 46.45 - (15.5 / 2), 12.2, 15.5, 1.25, 0.75).attr({
+    var speakerCorrectSize = s.rect(1.3 + 0.8 + 1.3 + (93.2 / 2) - (15.5 / 2), 12.2, 15.5, 1.25, 0.75).attr({
         stroke: "red",
         strokeWidth: 0.25, 
         fill: "none"
