@@ -26,9 +26,21 @@
         fill: "none"
     });
 
+    var squareTLCorrectSize = s.rect(0, 15.75, 1.3, 3).attr({
+        stroke: "red",
+        strokeWidth: 0.25,
+        fill: "none"
+    });
+
     
     var squareTR = s.rect(97, 14, 3, 3).attr({
         //fill: "rgba(0, 0, 0, 0.5)" 
+        fill: "none"
+    });
+
+    var squareTRCorrectSize = s.rect(100 - 1.3, 15.75, 1.3, 3).attr({
+        stroke: "red",
+        strokeWidth: 0.25,
         fill: "none"
     });
 
@@ -38,11 +50,23 @@
         fill: "none"
     });
 
+    var squareBLCorrectSize = s.rect(0, 207.5 - 15.75 - 3, 1.3, 3).attr({
+        stroke: "red",
+        strokeWidth: 0.25,
+        fill: "none"
+    });
+
     var squareBR = s.rect(97, 186.7, 3, 3).attr({
         //fill: "rgba(0, 0, 0, 0.5)" 
         fill: "none"
     });
 
+    var squareBRCorrectSize = s.rect(100 - 1.3, 207.5 - 15.75 - 3, 1.3, 3).attr({
+        stroke: "red",
+        strokeWidth: 0.25,
+        fill: "none"
+          
+    });
 
     var faceFilter = s.filter(Snap.filter.shadow(0, 0, 1, "#fff", 1)),
         face = s.rect(1.5, 1.5, 97, 201, 13.32, 13.32).attr({
@@ -219,6 +243,11 @@
         clip: lensMask
     });
 
+    var sensor = s.circle(50, 1.3 + 1.3 + 2 + 1.3, 1.2).attr({
+        stroke: "red",
+        strokeWidth: 0.25,
+        fill: "none"
+    });
 
     var speakerGradient = s.gradient("l(0, 0, 0, 1)#383838-#484848-#282828"),
         speaker = s.rect(43.375, 12, 13.25, 1.25, 0.75).attr({
