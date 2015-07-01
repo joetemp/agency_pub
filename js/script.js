@@ -81,6 +81,12 @@
             fill: "none"
     });
 
+    var horizontalFadeCorrectSize = s.rect(2.1, 1.3 + 1.3 + 2 + 20 + (158.3 / 2) - (118.01 / 2), 95.8, 118.01).attr({
+        stroke: "blue",
+        strokeWidth: 0.25,
+        fill: "none"
+    });
+
     var verticalFadeGradient = s.gradient("l(0, 0, 1, 0)rgba(0, 0, 0, 0)-rgba(0, 0, 0, 1):10-rgba(0, 0, 0, 0.8):90-rgba(0, 0, 0, 0)"),
         verticalFade = s.rect(2.713, 3.1, 94.575, 197.8, 12.096).attr({
             // UNCOMMENT!
