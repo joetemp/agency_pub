@@ -94,6 +94,12 @@
         fill: "none"
     });
 
+    var bezelCorrectSize = s.rect(3.4, 4.6, 93.2, 198.3, 11.46).attr({ 
+        stroke: "red",
+        strokeWidth: 0.25,
+        fill: "none"
+    });
+
     var display = s.rect(6.2, 23.5, 87.6, 157);
 
     display.attr({
@@ -176,6 +182,12 @@
         speaker = s.rect(43.375, 12, 13.25, 1.25, 0.75).attr({
         //UNCOMMENT!
         //fill: speakerGradient
+        fill: "none"
+    });
+
+    var speakerCorrectSize = s.rect(1.3 + 0.8 + 1.3 + 46.45 - (15.5 / 2), 12.2, 15.5, 1.25, 0.75).attr({
+        stroke: "red",
+        strokeWidth: 0.25, 
         fill: "none"
     });
 
