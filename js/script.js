@@ -114,6 +114,12 @@
         fill: "none"
     });
 
+    var displayCorrectSize = s.rect(1.3 + 0.8 + 1.3 + 2.6, 1.3 + 1.3 + 2 + 20, 88, 158.3).attr({
+        stroke: "red",
+        strokeWidth: 0.25,
+        fill: "none"
+    });
+
     //var buttonOuter = s.circle(50, 190.85, 6.6).attr({
     var buttonOuter = s.circle(50, 190.85, 6.6).attr({
         // UNCOMMENT!
