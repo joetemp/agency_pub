@@ -112,9 +112,8 @@ section #guide {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  display: none;
 }
-/* line 50, ../sass/screen.scss */
+/* line 49, ../sass/screen.scss */
 section #mysvg {
   position: absolute;
   top: 50%;
@@ -124,17 +123,17 @@ section #mysvg {
   z-index: 100;
 }
 
-/* line 62, ../sass/screen.scss */
+/* line 61, ../sass/screen.scss */
 section:nth-of-type(1) {
   background: white;
 }
 
-/* line 66, ../sass/screen.scss */
+/* line 65, ../sass/screen.scss */
 section:nth-of-type(2) {
   background: #444;
 }
 
-/* line 70, ../sass/screen.scss */
+/* line 69, ../sass/screen.scss */
 section:nth-of-type(3) {
   background: #666;
 }

@@ -177,7 +177,7 @@
         clip: buttonMask
     });
 
-    var buttonInner = s.circle(50, 194.2 , 7).attr({
+    var buttonInner = s.circle(50, 194.2 , 6.9).attr({
         fill: "#080808"
     });
 
