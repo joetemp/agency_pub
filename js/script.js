@@ -80,7 +80,7 @@
         
     var horFadeGradient = s.gradient("l(0, 0, 0, 1)rgba(0, 0, 0, 0)-rgba(0, 0, 0, 1):20-rgba(0, 0, 0, 0.8):80-rgba(0, 0, 0, 0)"),
         horFade = s.rect(horFadeX, horFadeY, horFadeWidth, horFadeHeight).attr({
-            //fill: horizontalFadeGradient 
+            //fill: horFadeGradient 
             fill: "none"
     });
 
@@ -93,15 +93,24 @@
     var vertFadeX = glareX + ((glareWidth - vertFadeWidth) / 2);
     var vertFadeY = glareY + ((glareHeight - vertFadeHeight) / 2);
 
-    var verticalFadeGradient = s.gradient("l(0, 0, 1, 0)rgba(0, 0, 0, 0)-rgba(0, 0, 0, 1):10-rgba(0, 0, 0, 0.8):90-rgba(0, 0, 0, 0)"),
-        verticalFade = s.rect(vertFadeX, vertFadeY, vertFadeWidth, vertFadeHeight, vertFadeRx, vertFadeRy).attr({
-            //fill: verticalFadeGradient 
+    var vertFadeGradient = s.gradient("l(0, 0, 1, 0)rgba(0, 0, 0, 0)-rgba(0, 0, 0, 1):10-rgba(0, 0, 0, 0.8):90-rgba(0, 0, 0, 0)"),
+        vertFade = s.rect(vertFadeX, vertFadeY, vertFadeWidth, vertFadeHeight, vertFadeRx, vertFadeRy).attr({
+            //fill: vertFadeGradient 
             fill: "none"
         });
 
-    var bezel = s.rect(3.4, 4.6, 93.2, 198.3, 11.46).attr({
+    var bezelDiffX = 2.25;
+    var bezelDiffY = 2;
+    var bezelWidth = glareWidth - bezelDiffX;
+    var bezelHeight = glareHeight - bezelDiffY;
+    var bezelRx = 11.5;
+    var bezelRy = 13.5;
+    var bezelX = glareX + ((glareWidth - bezelWidth) / 2);
+    var bezelY = glareY + ((glareHeight - bezelHeight) / 2);
+
+    var bezel = s.rect(bezelX, bezelY, bezelWidth, bezelHeight, bezelRx, bezelRy).attr({
         //fill: "#080808" 
-        fill: "none"
+        fill: "red"
     });
 
     var display = s.rect(6.2, 23.5, 87.6, 157).attr({
