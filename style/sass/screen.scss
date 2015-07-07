@@ -6,6 +6,7 @@
 @import "compass/reset";
 @import "compass/css3";
 @import "iphone";
+@import "panel";
 
 body, html {
     height: 100%;
@@ -44,6 +45,7 @@ section {
         left: 50%;
         transform: translate(-50%, -50%);
         //opacity: 0.5
+        display: none;
     }
 
     #mysvg {
@@ -52,7 +54,6 @@ section {
         left: 50%;
         width: 20%;
         transform: translate(-50%, -50%);
-        z-index: 100;
         //opacity: 0.5;
         //display: none;
     }

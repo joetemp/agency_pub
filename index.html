@@ -6,11 +6,33 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <link rel="stylesheet" type="text/css" href="style/stylesheets/screen.css">
     <title>Project Spex | Deal with it.</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="//code.jquery.com/ui/1.11.0/jquery-ui.js"></script>
     <script src="js/snap.svg.js"></script>
+    <script src="js/panel.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenMax.min.js"></script>
 </head>
 
     <body>
+
+        <div class="panel">                                                                                                                             
+            <div class="controls">
+                <button class="control x">X</button>
+                <button class="control y selected">Y</button>
+                <!--<input class="angle" type="text" placeholder="angle">
+                <input class="coords" type="text" placeholder="x, y">-->
+            </div>
+
+            <div class="palette">
+                <button class="color c1"></button>
+                <button class="color c2"></button>
+                <button class="color c3"></button>
+                <button class="color c4"></button>
+                <button class="color c5"></button>
+                <button class="color c6"></button>
+            </div>
+        </div>
+
         <section>
             <img src="assets/iphone-6-plus.jpg" id="iphone">
             <svg id="mysvg" viewBox="-0.25 -0.25 100.5 208"></svg>
