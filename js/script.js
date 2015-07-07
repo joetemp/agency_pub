@@ -2,17 +2,18 @@
 
     // This is to get rid of edge entirely.
 
-    /*var edgeGradient = s.gradient("l(0, 0, 0, 1)#68696e-#47484b"),
-        edge = s.rect(0, 0, 100, 207.5, 14.64).attr({
-            fill: edgeGradient
+    var edgeGradient = s.gradient("l(0, 0, 0, 1)#68696e-#47484b"),
+        edge = s.rect(0, 0, 100, 206.5, 14.775).attr({
+            //fill: edgeGradient
+            fill: "red"
         });
 
     var group = s.group();
-    group.append(s.rect(0, 0, 100, 207.5, 14.64).attr({fill: "white"}));
+    group.append(s.rect(0, 0, 100, 206.5, 14.775).attr({fill: "white"}));
 
     var chargerCutout = s.rect(50 - (12 / 2), 207.5 - 0.4, 12, 1.25, 2.5).attr({fill: "black"}).appendTo(group);
 
-    edge.attr({mask: group});*/
+    edge.attr({mask: group});
 
     var squareTL = s.rect(0, 15.75, 1.3, 3).attr({
         //fill: "rgba(0, 0, 0, 0.3)" 
@@ -38,8 +39,8 @@
     var faceFilter = s.filter(Snap.filter.shadow(0, 0, 1, "#fff", 1)),
         face = s.rect(1.3, 1.3, 97.4, 204.9, 13.32, 13.32).attr({
             //fill: "#080808",
-            fill: "red"
             //filter: faceFilter
+            fill: "none"
         });
     
     var glareGradient = s.gradient("l(0, 0, 1, 0.8)rgba(255, 255, 255, 0.18)-rgba(255, 255, 255, 0.09)"),

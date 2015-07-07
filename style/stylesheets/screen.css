@@ -317,6 +317,7 @@ section #mysvg {
   width: 20%;
   transform: translate(-50%, -50%);
   z-index: 10;
+  opacity: 0.5;
 }
 
 /* line 61, ../sass/screen.scss */
