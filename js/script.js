@@ -1,20 +1,20 @@
     var s = Snap("#mysvg")
 
-    var edgeX = 0;
-    var edgeY = 0;
     var edgeWidth = 100;
     var edgeHeight = 206;
     var edgeRx = 15;
     var edgeRy = 15;
+    var edgeX = 0;
+    var edgeY = 0;
 
     var edgeGradient = s.gradient("l(0, 0, 0, 1)#68696e-#47484b"),
         edge = s.rect(edgeX, edgeY, edgeWidth, edgeHeight, edgeRx, edgeRy).attr({
             //fill: edgeGradient
-            fill: "red"
+            fill: "none"
         });
 
     var group = s.group();
-    group.append(s.rect(0, 0, edgeWidth, edgeHeight, edgeRx, edgeRy).attr({fill: "white"}));
+    group.append(s.rect(edgeX, edgeY, edgeWidth, edgeHeight, edgeRx, edgeRy).attr({fill: "white"}));
 
     var chargerCutout = s.rect(50 - (12 / 2), 207.5 - 0.4, 12, 1.25, 2.5).attr({fill: "black"}).appendTo(group);
 
@@ -53,23 +53,48 @@
         face = s.rect(faceX, faceY, faceWidth, faceHeight, faceRx, faceRy).attr({
             //fill: "#080808",
             //filter: faceFilter
-            fill: "blue"
+            fill: "none"
         });
     
+    var glareDiffX = 2;
+    var glareDiffY = 4;
+    var glareWidth = faceWidth - glareDiffX;
+    var glareHeight = faceHeight - glareDiffY;
+    var glareRx = 12;
+    var glareRy = 12;
+    var glareX = faceX + ((faceWidth - glareWidth) / 2);
+    var glareY = faceY + ((faceHeight - glareHeight) / 2);
+
     var glareGradient = s.gradient("l(0, 0, 1, 0.8)rgba(255, 255, 255, 0.18)-rgba(255, 255, 255, 0.09)"),
-        glare = s.rect(2.1, 2.6, 95.8, 202.3, 12.096).attr({
+        glare = s.rect(glareX, glareY, glareWidth, glareHeight, glareRx, glareRy).attr({
             //fill: glareGradient
             fill: "none"
         });
     
-    var horizontalFadeGradient = s.gradient("l(0, 0, 0, 1)rgba(0, 0, 0, 0)-rgba(0, 0, 0, 1):20-rgba(0, 0, 0, 0.8):80-rgba(0, 0, 0, 0)"),
-        horizontalFade = s.rect(2.1, 1.3 + 1.3 + 2 + 20 + (158.3 / 2) - (118.01 / 2), 95.8, 118.01).attr({
+    var horFadeDiffX = 0;
+    var horFadeDiffY = 80;
+    var horFadeWidth = glareWidth - horFadeDiffX;
+    var horFadeHeight = glareHeight - horFadeDiffY;
+    var horFadeX = glareX + ((glareWidth - horFadeWidth) / 2);
+    var horFadeY = glareY + ((glareHeight - horFadeHeight) / 2);
+        
+    var horFadeGradient = s.gradient("l(0, 0, 0, 1)rgba(0, 0, 0, 0)-rgba(0, 0, 0, 1):20-rgba(0, 0, 0, 0.8):80-rgba(0, 0, 0, 0)"),
+        horFade = s.rect(horFadeX, horFadeY, horFadeWidth, horFadeHeight).attr({
             //fill: horizontalFadeGradient 
             fill: "none"
     });
 
+    var vertFadeDiffX = 0;
+    var vertFadeDiffY = 0;
+    var vertFadeWidth = glareWidth - vertFadeDiffX;
+    var vertFadeHeight = glareHeight - vertFadeDiffY;
+    var vertFadeRx = glareRx;
+    var vertFadeRy = glareRy;
+    var vertFadeX = glareX + ((glareWidth - vertFadeWidth) / 2);
+    var vertFadeY = glareY + ((glareHeight - vertFadeHeight) / 2);
+
     var verticalFadeGradient = s.gradient("l(0, 0, 1, 0)rgba(0, 0, 0, 0)-rgba(0, 0, 0, 1):10-rgba(0, 0, 0, 0.8):90-rgba(0, 0, 0, 0)"),
-        verticalFade = s.rect(2.1, 2.6, 95.8, 202.3, 12.096).attr({
+        verticalFade = s.rect(vertFadeX, vertFadeY, vertFadeWidth, vertFadeHeight, vertFadeRx, vertFadeRy).attr({
             //fill: verticalFadeGradient 
             fill: "none"
         });
