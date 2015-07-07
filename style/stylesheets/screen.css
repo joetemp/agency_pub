@@ -73,212 +73,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   stroke-width: 0.25;
 }
 
-/* line 24, ../sass/_panel.scss */
-.guideX {
-  bottom: 7em;
-  height: 20px;
-  width: 100%;
-  position: absolute;
-}
-/* line 30, ../sass/_panel.scss */
-.guideX .line {
-  width: 100%;
-  height: 1px;
-  margin-top: 10px;
-}
-
-/* line 37, ../sass/_panel.scss */
-.guideY {
-  left: 7em;
-  top: 0;
-  height: 100%;
-  width: 20px;
-  position: fixed;
-}
-/* line 44, ../sass/_panel.scss */
-.guideY .line {
-  height: 100%;
-  width: 1px;
-  margin-left: 10px;
-}
-
-/* line 51, ../sass/_panel.scss */
-.c1 {
-  background: #2ecc71;
-}
-
-/* line 52, ../sass/_panel.scss */
-.c2 {
-  background: #3498db;
-}
-
-/* line 53, ../sass/_panel.scss */
-.c3 {
-  background: #9b59b6;
-}
-
-/* line 54, ../sass/_panel.scss */
-.c4 {
-  background: #e74c3c;
-}
-
-/* line 55, ../sass/_panel.scss */
-.c5 {
-  background: #f2ca27;
-}
-
-/* line 56, ../sass/_panel.scss */
-.c6 {
-  background: #7f8c8d;
-}
-
-/* line 58, ../sass/_panel.scss */
-.panel {
-  position: fixed;
-  height: 100%;
-  width: 7em;
-  opacity: 0.1;
-  -webkit-transition: all 0.25s;
-  -moz-transition: all 0.25s;
-  -ms-transition: all 0.25s;
-  -o-transition: all 0.25s;
-  transition: all 0.25s;
-  z-index: 100000;
-}
-/* line 66, ../sass/_panel.scss */
-.panel button {
-  position: relative;
-  width: 5em;
-  height: 2em;
-  margin: 0;
-  padding: 0;
-  background: #bdc3c7;
-  border-radius: 0.25em;
-  line-height: 2em;
-  text-align: center;
-  color: white;
-  font-family: 'Roboto', sans-serif;
-  opacity: 0.75;
-  -webkit-transition: all 0.1s;
-  -moz-transition: all 0.1s;
-  -ms-transition: all 0.1s;
-  -o-transition: all 0.1s;
-  transition: all 0.1s;
-  border: none;
-  outline: none;
-  margin-left: 1em;
-  margin-top: 1em;
-}
-/* line 88, ../sass/_panel.scss */
-.panel button:hover {
-  opacity: 1;
-  -webkit-transform: scale(1.2);
-  -moz-transform: scale(1.2);
-  -ms-transform: scale(1.2);
-  -o-transform: scale(1.2);
-  transform: scale(1.2);
-}
-/* line 93, ../sass/_panel.scss */
-.panel .c1 {
-  background: #2ecc71;
-}
-/* line 94, ../sass/_panel.scss */
-.panel .c2 {
-  background: #3498db;
-}
-/* line 95, ../sass/_panel.scss */
-.panel .c3 {
-  background: #9b59b6;
-}
-/* line 96, ../sass/_panel.scss */
-.panel .c4 {
-  background: #e74c3c;
-}
-/* line 97, ../sass/_panel.scss */
-.panel .c5 {
-  background: #f2ca27;
-}
-/* line 98, ../sass/_panel.scss */
-.panel .c6 {
-  background: #7f8c8d;
-}
-/* line 100, ../sass/_panel.scss */
-.panel .selected {
-  opacity: 1;
-  -webkit-transform: scale(1.2);
-  -moz-transform: scale(1.2);
-  -ms-transform: scale(1.2);
-  -o-transform: scale(1.2);
-  transform: scale(1.2);
-}
-/* line 105, ../sass/_panel.scss */
-.panel .controls {
-  position: relative;
-}
-/* line 107, ../sass/_panel.scss */
-.panel .controls input {
-  width: 5em;
-  height: 2em;
-  background: #ecf0f1;
-  color: #95a5a6;
-  font-family: 'Roboto', sans-serif;
-  border-radius: 0.25em;
-  text-align: center;
-  border: none;
-  margin-top: 1em;
-  margin-left: 1em;
-}
-/* line 121, ../sass/_panel.scss */
-.panel .controls input:focus {
-  width: calc(5em - 2px);
-  height: calc(2em - 2px);
-  background: white;
-  border: 1px solid #2ecc71;
-}
-/* line 129, ../sass/_panel.scss */
-.panel .palette {
-  width: 6em;
-  position: relative;
-}
-/* line 133, ../sass/_panel.scss */
-.panel .palette .color {
-  float: left;
-  width: 2em;
-  height: 2em;
-  margin: 1em 0 0 1em;
-  border-radius: 0.25em;
-  opacity: 0.7;
-  -webkit-transition: all 0.1s;
-  -moz-transition: all 0.1s;
-  -ms-transition: all 0.1s;
-  -o-transition: all 0.1s;
-  transition: all 0.1s;
-}
-/* line 143, ../sass/_panel.scss */
-.panel .palette .color:hover {
-  opacity: 1;
-  -webkit-transform: scale(1.2);
-  -moz-transform: scale(1.2);
-  -ms-transform: scale(1.2);
-  -o-transform: scale(1.2);
-  transform: scale(1.2);
-}
-
-/* line 150, ../sass/_panel.scss */
-.panel:hover {
-  opacity: 1;
-}
-
-/* line 11, ../sass/screen.scss */
+/* line 10, ../sass/screen.scss */
 body, html {
   height: 100%;
 }
 
-/* line 15, ../sass/screen.scss */
+/* line 14, ../sass/screen.scss */
 section {
   height: 100%;
 }
-/* line 18, ../sass/screen.scss */
+/* line 17, ../sass/screen.scss */
 section #stencil {
   position: absolute;
   width: 39.27vh;
@@ -290,7 +94,7 @@ section #stencil {
   margin-left: -19.635vh;
   margin-top: -40vh;
 }
-/* line 30, ../sass/screen.scss */
+/* line 29, ../sass/screen.scss */
 section #iphone {
   position: absolute;
   height: 80vh;
@@ -301,7 +105,7 @@ section #iphone {
   opacity: 0;
   display: none;
 }
-/* line 41, ../sass/screen.scss */
+/* line 40, ../sass/screen.scss */
 section #guide {
   position: absolute;
   width: 20%;

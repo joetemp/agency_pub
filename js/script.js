@@ -1,15 +1,16 @@
     var s = Snap("#mysvg")
 
-    // This is to get rid of edge entirely.
+    var edgeWidth = 100;
+    var edgeHeight = 206.5;
 
     var edgeGradient = s.gradient("l(0, 0, 0, 1)#68696e-#47484b"),
-        edge = s.rect(0, 0, 100, 206.5, 14.775).attr({
+        edge = s.rect(0, 0, edgeWidth, edgeHeight, 14.775).attr({
             //fill: edgeGradient
             fill: "red"
         });
 
     var group = s.group();
-    group.append(s.rect(0, 0, 100, 206.5, 14.775).attr({fill: "white"}));
+    group.append(s.rect(0, 0, edgeWidth, edgeHeight, 14.775).attr({fill: "white"}));
 
     var chargerCutout = s.rect(50 - (12 / 2), 207.5 - 0.4, 12, 1.25, 2.5).attr({fill: "black"}).appendTo(group);
 
@@ -35,12 +36,18 @@
         fill: "none"
     });
 
-    // Got rid of face filter for testing purposes.
+    var faceDiffX = 3;
+    var faceDiffY = 3;
+    var faceWidth = edgeWidth - faceDiffX;
+    var faceHeight = edgeHeight - faceDiffY;
+    var faceX = (edgeWidth - faceWidth) / 2;
+    var faceY = (edgeHeight - faceHeight) / 2;
+
     var faceFilter = s.filter(Snap.filter.shadow(0, 0, 1, "#fff", 1)),
-        face = s.rect(1.3, 1.3, 97.4, 204.9, 13.32, 13.32).attr({
+        face = s.rect(faceX, faceY, faceWidth, faceHeight, 13, 13).attr({
             //fill: "#080808",
             //filter: faceFilter
-            fill: "none"
+            fill: "blue"
         });
     
     var glareGradient = s.gradient("l(0, 0, 1, 0.8)rgba(255, 255, 255, 0.18)-rgba(255, 255, 255, 0.09)"),
