@@ -38,7 +38,7 @@
     var faceFilter = s.filter(Snap.filter.shadow(0, 0, 1, "#fff", 1)),
         face = s.rect(1.3, 1.3, 97.4, 204.9, 13.32, 13.32).attr({
             //fill: "#080808",
-            fill: "none"
+            fill: "red"
             //filter: faceFilter
         });
     
@@ -80,11 +80,13 @@
     var buttonGlareGradient = s.gradient("r(0.5, 0.5, 0.5)rgba(255, 255, 255, 0.35)-rgba(255, 255, 255, 0)");
 
     var buttonGlareR = s.circle(56, 191.85, 6.6).attr({
-        fill: buttonGlareGradient,
+        //fill: buttonGlareGradient,
+        fill: "none"
     });
 
     var buttonGlareL = s.circle(43, 196.85, 6.6).attr({
-        fill: buttonGlareGradient
+        //fill: buttonGlareGradient
+        fill: "none"
     });
 
     var buttonGlareGroup = s.group(buttonGlareR, buttonGlareL).attr({
