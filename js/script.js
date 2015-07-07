@@ -1,16 +1,20 @@
     var s = Snap("#mysvg")
 
+    var edgeX = 0;
+    var edgeY = 0;
     var edgeWidth = 100;
-    var edgeHeight = 206.5;
+    var edgeHeight = 206;
+    var edgeRx = 15;
+    var edgeRy = 15;
 
     var edgeGradient = s.gradient("l(0, 0, 0, 1)#68696e-#47484b"),
-        edge = s.rect(0, 0, edgeWidth, edgeHeight, 14.775).attr({
+        edge = s.rect(edgeX, edgeY, edgeWidth, edgeHeight, edgeRx, edgeRy).attr({
             //fill: edgeGradient
             fill: "red"
         });
 
     var group = s.group();
-    group.append(s.rect(0, 0, edgeWidth, edgeHeight, 14.775).attr({fill: "white"}));
+    group.append(s.rect(0, 0, edgeWidth, edgeHeight, edgeRx, edgeRy).attr({fill: "white"}));
 
     var chargerCutout = s.rect(50 - (12 / 2), 207.5 - 0.4, 12, 1.25, 2.5).attr({fill: "black"}).appendTo(group);
 
@@ -36,15 +40,17 @@
         fill: "none"
     });
 
-    var faceDiffX = 3;
-    var faceDiffY = 3;
+    var faceDiffX = 3.25;
+    var faceDiffY = 2.75;
     var faceWidth = edgeWidth - faceDiffX;
     var faceHeight = edgeHeight - faceDiffY;
+    var faceRx = 13.75;
+    var faceRy = 13.75;
     var faceX = (edgeWidth - faceWidth) / 2;
     var faceY = (edgeHeight - faceHeight) / 2;
 
     var faceFilter = s.filter(Snap.filter.shadow(0, 0, 1, "#fff", 1)),
-        face = s.rect(faceX, faceY, faceWidth, faceHeight, 13, 13).attr({
+        face = s.rect(faceX, faceY, faceWidth, faceHeight, faceRx, faceRy).attr({
             //fill: "#080808",
             //filter: faceFilter
             fill: "blue"
