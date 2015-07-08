@@ -9,8 +9,7 @@
 
     var edgeGradient = s.gradient("l(0, 0, 0, 1)#68696e-#47484b"),
         edge = s.rect(edgeX, edgeY, edgeWidth, edgeHeight, edgeRx, edgeRy).attr({
-            //fill: edgeGradient
-            fill: "red"
+            fill: edgeGradient
         });
 
     var group = s.group();
@@ -20,12 +19,16 @@
 
     edge.attr({mask: group});
 
-    var stripeTop = s.rect(0, 15.8, edgeWidth, 3).attr({
-        fill: "purple"
+    var stripeHeight = 3;
+    var stripeOffset = 15.8;
+    var stripeColor = "rgba(0, 0, 0, 0.3)";
+
+    var stripeTop = s.rect(0, stripeOffset, edgeWidth, stripeHeight).attr({
+        fill: stripeColor
     });
 
     var stripeBottom = s.rect(0, edgeHeight - 3 - 15.8, edgeWidth,  3).attr({
-        fill: "purple" 
+        fill: stripeColor 
     });
 
     var faceDiffX = 3.25;
@@ -39,9 +42,8 @@
 
     var faceFilter = s.filter(Snap.filter.shadow(0, 0, 1, "#fff", 1)),
         face = s.rect(faceX, faceY, faceWidth, faceHeight, faceRx, faceRy).attr({
-            //fill: "#080808",
-            //filter: faceFilter
-            fill: "none"
+            fill: "#080808",
+            filter: faceFilter
         });
     
     var glareDiffX = 2;
@@ -55,8 +57,7 @@
 
     var glareGradient = s.gradient("l(0, 0, 1, 0.8)rgba(255, 255, 255, 0.18)-rgba(255, 255, 255, 0.09)"),
         glare = s.rect(glareX, glareY, glareWidth, glareHeight, glareRx, glareRy).attr({
-            //fill: glareGradient
-            fill: "none"
+            fill: glareGradient
         });
     
     var horFadeDiffX = 0;
@@ -66,10 +67,9 @@
     var horFadeX = glareX + ((glareWidth - horFadeWidth) / 2);
     var horFadeY = glareY + ((glareHeight - horFadeHeight) / 2);
         
-    var horFadeGradient = s.gradient("l(0, 0, 0, 1)rgba(0, 0, 0, 0)-rgba(0, 0, 0, 1):20-rgba(0, 0, 0, 0.8):80-rgba(0, 0, 0, 0)"),
+    var horFadeGradient = s.gradient("l(0, 0, 0, 1)rgba(8, 8, 8, 0)-rgba(8, 8, 8, 1):20-rgba(8, 8, 8, 0.8):80-rgba(8, 8, 8, 0)"),
         horFade = s.rect(horFadeX, horFadeY, horFadeWidth, horFadeHeight).attr({
-            //fill: horFadeGradient 
-            fill: "none"
+            fill: horFadeGradient 
     });
 
     var vertFadeDiffX = 0;
@@ -81,10 +81,9 @@
     var vertFadeX = glareX + ((glareWidth - vertFadeWidth) / 2);
     var vertFadeY = glareY + ((glareHeight - vertFadeHeight) / 2);
 
-    var vertFadeGradient = s.gradient("l(0, 0, 1, 0)rgba(0, 0, 0, 0)-rgba(0, 0, 0, 1):10-rgba(0, 0, 0, 0.8):90-rgba(0, 0, 0, 0)"),
+    var vertFadeGradient = s.gradient("l(0, 0, 1, 0)rgba(8, 8, 8, 0)-rgba(8, 8, 8, 1):10-rgba(8, 8, 8, 0.8):90-rgba(8, 8, 8, 0)"),
         vertFade = s.rect(vertFadeX, vertFadeY, vertFadeWidth, vertFadeHeight, vertFadeRx, vertFadeRy).attr({
-            //fill: vertFadeGradient 
-            fill: "none"
+            fill: vertFadeGradient 
         });
 
     var bezelDiffX = 2.25;
@@ -97,8 +96,7 @@
     var bezelY = glareY + ((glareHeight - bezelHeight) / 2);
 
     var bezel = s.rect(bezelX, bezelY, bezelWidth, bezelHeight, bezelRx, bezelRy).attr({
-        //fill: "#080808" 
-        fill: "none"
+        fill: "#080808" 
     });
 
     var displayDiffX = 4.5;
@@ -111,9 +109,8 @@
     var displayY = bezelY + ((bezelHeight - displayHeight) / 2);
 
     var display = s.rect(displayX, displayY, displayWidth, displayHeight).attr({
-        //fill: "#191919"
-        fill: "none",
-        stroke: "none", 
+        fill: "#191919", 
+        stroke: "#0e0e0e", 
         strokeWidth: 0.5
             
     });
@@ -160,7 +157,7 @@
     var cameraOuterGradient = s.gradient("r(0.75, 0.75, 0.65)#696969-#1f1f1f"),
         cameraOuter = s.circle(cameraX, cameraY, cameraOuterR).attr({
             //fill: cameraOuterGradient,
-            fill: "red"
+            fill: "none"
         });
 
     var cameraInnerR = 1;
@@ -168,7 +165,7 @@
     var cameraInnerGradient = s.gradient("r(0.25, 0.25, 0.6)#263B72-#0f141a"),
         cameraInner = s.circle(cameraX, cameraY, cameraInnerR).attr({
             //fill: cameraInnerGradient
-            fill: "yellow"
+            fill: "none"
         });
 
     var lensMask = s.circle(33.8, 12.875, 0.95).attr({
@@ -194,8 +191,7 @@
     var sensorY = (faceDiffY / 2) + ((faceHeight - displayHeight) / 4) + sensorYOffset; 
 
     var sensor = s.circle(sensorX, sensorY, sensorR).attr({
-        //fill: "rgba(255, 255, 255, 0.1)"
-        fill: "blue"
+        fill: "rgba(255, 255, 255, 0.1)"
     });
 
     var speakerWidth = 16;
@@ -206,7 +202,7 @@
     var speakerGradient = s.gradient("l(0, 0, 0, 1)#383838-#484848-#282828"),
         speaker = s.rect(speakerX, speakerY, speakerWidth, speakerHeight, 0.75).attr({
         //fill: speakerGradient
-        fill: "red"
+        fill: "none"
     });
 
     var holes = s.circle(0.15, 0.1, 0.15).attr({
