@@ -163,17 +163,24 @@
         //fill: "#080808"
         fill: "none"
     });
+
+    var cameraXOffset = -16;
+    var cameraX = (faceDiffX / 2) + (faceWidth / 2) + cameraXOffset;
+    var cameraY = (faceDiffY / 2) + ((faceHeight - displayHeight) / 4);
+    var cameraOuterR = 1.7;
     
     var cameraOuterGradient = s.gradient("r(0.75, 0.75, 0.65)#696969-#1f1f1f"),
-        cameraOuter = s.circle(33.8, 12.875, 1.7).attr({
+        cameraOuter = s.circle(cameraX, cameraY, cameraOuterR).attr({
             //fill: cameraOuterGradient,
-            fill: "none"
+            fill: "red"
         });
 
+    var cameraInnerR = 1;
+
     var cameraInnerGradient = s.gradient("r(0.25, 0.25, 0.6)#263B72-#0f141a"),
-        cameraInner = s.circle(33.8, 12.875, 0.95).attr({
+        cameraInner = s.circle(cameraX, cameraY, cameraInnerR).attr({
             //fill: cameraInnerGradient
-            fill: "none"
+            fill: "yellow"
         });
 
     var lensMask = s.circle(33.8, 12.875, 0.95).attr({
