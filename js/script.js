@@ -209,10 +209,15 @@
         fill: "blue"
     });
 
+    var speakerWidth = 16;
+    var speakerHeight = 1.6;
+    var speakerX = (faceDiffX / 2) + (faceWidth / 2) - (speakerWidth / 2);
+    var speakerY = (faceDiffY / 2) + ((faceHeight - displayHeight) / 4) - (speakerHeight / 2);
+
     var speakerGradient = s.gradient("l(0, 0, 0, 1)#383838-#484848-#282828"),
-        speaker = s.rect(1.3 + 0.8 + 1.3 + (93.2 / 2) - (15.5 / 2), 12.2, 15.5, 1.4, 0.75).attr({
+        speaker = s.rect(speakerX, speakerY, speakerWidth, speakerHeight, 0.75).attr({
         //fill: speakerGradient
-        fill: "none"
+        fill: "red"
     });
 
     var holes = s.circle(0.15, 0.1, 0.15).attr({
