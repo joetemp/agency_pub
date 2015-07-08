@@ -200,9 +200,13 @@
         clip: lensMask
     });
 
-    var sensor = s.circle(50, 1.3 + 1.3 + 2 + 1.3, 1.2).attr({
+    var sensorYOffset = -6.8;
+    var sensorX = (faceDiffX / 2) + (faceWidth / 2);
+    var sensorY = (faceDiffY / 2) + ((faceHeight - displayHeight) / 4) + sensorYOffset; 
+
+    var sensor = s.circle(sensorX, sensorY, 1.2).attr({
         //fill: "rgba(255, 255, 255, 0.1)"
-        fill: "none"
+        fill: "blue"
     });
 
     var speakerGradient = s.gradient("l(0, 0, 0, 1)#383838-#484848-#282828"),
