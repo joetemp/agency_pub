@@ -10,7 +10,7 @@
     var edgeGradient = s.gradient("l(0, 0, 0, 1)#68696e-#47484b"),
         edge = s.rect(edgeX, edgeY, edgeWidth, edgeHeight, edgeRx, edgeRy).attr({
             //fill: edgeGradient
-            fill: "none"
+            fill: "red"
         });
 
     var group = s.group();
@@ -20,24 +20,12 @@
 
     edge.attr({mask: group});
 
-    var squareTL = s.rect(0, 15.75, 1.3, 3).attr({
-        //fill: "rgba(0, 0, 0, 0.3)" 
-        fill: "none"
-    });
-    
-    var squareTR = s.rect(100 - 1.3, 15.75, 1.3, 3).attr({
-        //fill: "rgba(0, 0, 0, 0.3)" 
-        fill: "none"
+    var stripeTop = s.rect(0, 15.8, edgeWidth, 3).attr({
+        fill: "purple"
     });
 
-    var squareBL = s.rect(0, 207.5 - 15.75 - 3, 1.3, 3).attr({
-        //fill: "rgba(0, 0, 0, 0.3)" 
-        fill: "none"
-    });
-
-    var squareBR = s.rect(100 - 1.3, 207.5 - 15.75 - 3, 1.3, 3).attr({
-        //fill: "rgba(0, 0, 0, 0.3)" 
-        fill: "none"
+    var stripeBottom = s.rect(0, edgeHeight - 3 - 15.8, edgeWidth,  3).attr({
+        fill: "purple" 
     });
 
     var faceDiffX = 3.25;
@@ -200,11 +188,12 @@
         clip: lensMask
     });
 
-    var sensorYOffset = -6.8;
+    var sensorR = 1.25;
+    var sensorYOffset = -6.75;
     var sensorX = (faceDiffX / 2) + (faceWidth / 2);
     var sensorY = (faceDiffY / 2) + ((faceHeight - displayHeight) / 4) + sensorYOffset; 
 
-    var sensor = s.circle(sensorX, sensorY, 1.2).attr({
+    var sensor = s.circle(sensorX, sensorY, sensorR).attr({
         //fill: "rgba(255, 255, 255, 0.1)"
         fill: "blue"
     });
