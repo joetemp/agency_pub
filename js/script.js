@@ -104,26 +104,42 @@
     var bezelWidth = glareWidth - bezelDiffX;
     var bezelHeight = glareHeight - bezelDiffY;
     var bezelRx = 11.5;
-    var bezelRy = 13.5;
+    var bezelRy = 13.25;
     var bezelX = glareX + ((glareWidth - bezelWidth) / 2);
     var bezelY = glareY + ((glareHeight - bezelHeight) / 2);
 
     var bezel = s.rect(bezelX, bezelY, bezelWidth, bezelHeight, bezelRx, bezelRy).attr({
         //fill: "#080808" 
-        fill: "red"
-    });
-
-    var display = s.rect(6.2, 23.5, 87.6, 157).attr({
-        //fill: "#191919"
         fill: "none"
     });
 
-    var buttonOuter = s.circle(50, 194.2, 7.8).attr({
+    var displayDiffX = 4.5;
+    var displayDiffY = 40.75;
+    var displayWidth = bezelWidth - displayDiffX;
+    var displayHeight = bezelHeight - displayDiffY;
+    var displayRx = 0;
+    var displayRy = 0;
+    var displayX = bezelX + ((bezelWidth - displayWidth) / 2);
+    var displayY = bezelY + ((bezelHeight - displayHeight) / 2);
+
+    var display = s.rect(displayX, displayY, displayWidth, displayHeight).attr({
+        //fill: "#191919"
+        fill: "none",
+        stroke: "none", 
+        strokeWidth: 0.5
+            
+    });
+
+    var buttonX = (faceDiffX / 2 ) + (faceWidth / 2);
+    var buttonY = ((faceDiffY / 2) + faceHeight) - ((faceHeight - displayHeight) / 4) - 0.25;
+    var buttonOuterR = 7.8;
+
+    var buttonOuter = s.circle(buttonX, buttonY, buttonOuterR).attr({
         //fill: "#181818",
         fill: "none"
     });
 
-    var buttonMask = s.circle(50, 194.2, 7.8);
+    var buttonMask = s.circle(buttonX, buttonY, buttonOuterR);
    
     var buttonGlareGradient = s.gradient("r(0.5, 0.5, 0.5)rgba(255, 255, 255, 0.35)-rgba(255, 255, 255, 0)");
 
@@ -141,7 +157,9 @@
         clip: buttonMask
     });
 
-    var buttonInner = s.circle(50, 194.2 , 7).attr({
+    var buttonInnerR = 7;
+
+    var buttonInner = s.circle(buttonX, buttonY, buttonInnerR).attr({
         //fill: "#080808"
         fill: "none"
     });
