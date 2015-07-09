@@ -7,7 +7,7 @@
     var edgeX = 0;
     var edgeY = 0;
 
-    var edgeGradient = s.gradient("l(0, 0, 0, 1)#68696e-#47484b"),
+    var edgeGradient = s.gradient("l(0, 0, 0, 1)#45494C-#313538"),
         edge = s.rect(edgeX, edgeY, edgeWidth, edgeHeight, edgeRx, edgeRy).attr({
             fill: edgeGradient
         });
@@ -18,10 +18,25 @@
     var chargerCutout = s.rect(50 - (12 / 2), 207.5 - 0.4, 12, 1.25, 2.5).attr({fill: "black"}).appendTo(group);
 
     edge.attr({mask: group});
+    
+    var edgeGlareDiffX = 0.75;
+    var edgeGlareDiffY = 0.75;
+    var edgeGlareWidth = edgeWidth - edgeGlareDiffX;
+    var edgeGlareHeight = edgeHeight - edgeGlareDiffY;
+    var edgeGlareRx = 14.5;
+    var edgeGlareRy = 14.5;
+    var edgeGlareX = (edgeWidth - edgeGlareWidth) / 2;
+    var edgeGlareY = (edgeHeight - edgeGlareHeight) / 2;
+
+    var edgeGlareBlur = s.filter(Snap.filter.blur(0.25, 0.25)), 
+        edgeGlare = s.rect(edgeGlareX, edgeGlareY, edgeGlareWidth, edgeGlareHeight, edgeGlareRx, edgeGlareRy).attr({
+        fill: "rgba(255, 255, 255, 0.65)",
+        filter: edgeGlareBlur
+    });
 
     var stripeHeight = 3;
     var stripeOffset = 15.8;
-    var stripeColor = "rgba(0, 0, 0, 0.3)";
+    var stripeColor = "rgba(0, 0, 0, 0.2)";
 
     var stripeTop = s.rect(0, stripeOffset, edgeWidth, stripeHeight).attr({
         fill: stripeColor
@@ -40,10 +55,8 @@
     var faceX = (edgeWidth - faceWidth) / 2;
     var faceY = (edgeHeight - faceHeight) / 2;
 
-    var faceFilter = s.filter(Snap.filter.shadow(0, 0, 1, "#fff", 1)),
-        face = s.rect(faceX, faceY, faceWidth, faceHeight, faceRx, faceRy).attr({
-            fill: "#080808",
-            filter: faceFilter
+    var face = s.rect(faceX, faceY, faceWidth, faceHeight, faceRx, faceRy).attr({
+            fill: "#080808"
         });
     
     var glareDiffX = 2;
