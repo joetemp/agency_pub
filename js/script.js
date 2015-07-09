@@ -209,7 +209,7 @@
     var lensGlareBlur = s.filter(Snap.filter.blur(0.09, 0.09)), 
         bigGlare = s.circle(cameraX - 0.5, cameraY - 1.3, 1).attr({
         //fill: "#38508C" 
-        fill: "rgba(94, 147, 212, 0.6)", 
+        fill: "rgba(94, 147, 212, 0.7)", 
         filter: lensGlareBlur
     });
     
@@ -219,12 +219,12 @@
     });
 
     var smallGlare = s.circle(cameraX - 0.7, cameraY + 0.25, 0.25).attr({
-        fill: "rgba(94, 147, 212, 0.8)", 
+        fill: "rgba(94, 147, 212, 1)", 
         filter: lensGlareBlur
     });
     
     var smallGlare1 = s.circle(cameraX + 0.7, cameraY - 0.25, 0.25).attr({
-        fill: "rgba(94, 147, 212, 0.9)", 
+        fill: "rgba(94, 147, 212, 0.8)", 
         filter: lensGlareBlur
     });
 
