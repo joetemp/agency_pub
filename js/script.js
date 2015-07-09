@@ -199,19 +199,29 @@
     });
 
 
-    var blueGlareBlur = s.filter(Snap.filter.blur(0.1, 0.1)), 
-        blueGlare = s.circle(cameraX - 0.4, cameraY - 1.25, 1).attr({
+    var lensGlareBlur = s.filter(Snap.filter.blur(0.075, 0.075)), 
+        bigGlare = s.circle(cameraX - 0.5, cameraY - 1.3, 1).attr({
         //fill: "#38508C" 
-        fill: "rgba(94, 147, 212, 0.5)", 
-        filter: blueGlareBlur
+        fill: "rgba(94, 147, 212, 0.4)", 
+        filter: lensGlareBlur
+    });
+    
+    var bigGlare1 = s.circle(cameraX + 0.5, cameraY + 1.3, 1).attr({
+        fill: "rgba(94, 147, 212, 0.25)", 
+        filter: lensGlareBlur
     });
 
-    var whiteGlare = s.circle(32.9, 12.6, 0.225).attr({
-        //fill: "#6997BB"
-        fill: "none"
+    var smallGlare = s.circle(cameraX - 0.75, cameraY + 0.25, 0.25).attr({
+        fill: "rgba(94, 147, 212, 0.75)", 
+        filter: lensGlareBlur
+    });
+    
+    var smallGlare1 = s.circle(cameraX + 0.75, cameraY - 0.25, 0.25).attr({
+        fill: "rgba(94, 147, 212, 0.75)", 
+        filter: lensGlareBlur
     });
 
-    var glareGroup = s.group(blueGlare, whiteGlare).attr({
+    var glareGroup = s.group(bigGlare, bigGlare1,  smallGlare, smallGlare1).attr({
         clip: lensMask
     });
 
