@@ -190,41 +190,41 @@
 
 
     var lensShadowBlur = s.filter(Snap.filter.blur(0.05, 0.05)),
-        lensShadow = s.circle(cameraX - 0.08, cameraY - 0.08, 1.2).attr({
+        lensShadow = s.circle(cameraX - 0.05, cameraY - 0.05, 1.1).attr({
         fill: "rgba(0, 0, 0, 0.6)",
         filter: lensShadowBlur
     });
 
-    var cameraInnerR = 1;
+    var cameraInnerR = 0.9;
 
     var cameraInnerGradient = s.gradient("r(0.6, 0.6, 0.8)#0f141a-#263b72"),
         cameraInner = s.circle(cameraX, cameraY, cameraInnerR).attr({
-            fill: cameraInnerGradient
+            fill: "#0f141a"
         });
 
     var lensMask = s.circle(cameraX, cameraY, cameraInnerR).attr({
     });
 
 
-    var lensGlareBlur = s.filter(Snap.filter.blur(0.075, 0.075)), 
+    var lensGlareBlur = s.filter(Snap.filter.blur(0.09, 0.09)), 
         bigGlare = s.circle(cameraX - 0.5, cameraY - 1.3, 1).attr({
         //fill: "#38508C" 
-        fill: "rgba(94, 147, 212, 0.4)", 
+        fill: "rgba(94, 147, 212, 0.6)", 
         filter: lensGlareBlur
     });
     
     var bigGlare1 = s.circle(cameraX + 0.5, cameraY + 1.3, 1).attr({
-        fill: "rgba(94, 147, 212, 0.25)", 
+        fill: "rgba(94, 147, 212, 0.5)", 
         filter: lensGlareBlur
     });
 
-    var smallGlare = s.circle(cameraX - 0.75, cameraY + 0.25, 0.25).attr({
-        fill: "rgba(94, 147, 212, 0.75)", 
+    var smallGlare = s.circle(cameraX - 0.7, cameraY + 0.25, 0.25).attr({
+        fill: "rgba(94, 147, 212, 0.8)", 
         filter: lensGlareBlur
     });
     
-    var smallGlare1 = s.circle(cameraX + 0.75, cameraY - 0.25, 0.25).attr({
-        fill: "rgba(94, 147, 212, 0.75)", 
+    var smallGlare1 = s.circle(cameraX + 0.7, cameraY - 0.25, 0.25).attr({
+        fill: "rgba(94, 147, 212, 0.9)", 
         filter: lensGlareBlur
     });
 
