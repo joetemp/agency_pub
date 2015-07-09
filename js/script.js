@@ -188,6 +188,13 @@
             fill: cameraOuterGradient
         });
 
+
+    var lensShadowBlur = s.filter(Snap.filter.blur(0.05, 0.05)),
+        lensShadow = s.circle(cameraX - 0.08, cameraY - 0.08, 1.2).attr({
+        fill: "rgba(0, 0, 0, 0.6)",
+        filter: lensShadowBlur
+    });
+
     var cameraInnerR = 1;
 
     var cameraInnerGradient = s.gradient("r(0.6, 0.6, 0.8)#0f141a-#263b72"),
