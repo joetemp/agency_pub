@@ -44,7 +44,7 @@ section {
         left: 50%;
         //transform: translate(-50%, -50%);
         transform: translate(-50%, -1px);
-        //display: none;
+        display: none;
     }
 
     #mysvg {
@@ -52,7 +52,7 @@ section {
         top: 50%;
         left: 50%;
         width: 20%;
-        transform: translate(-50%, -0%);
+        transform: translate(-50%, -50%);
         z-index: 10;
         //opacity: 0.25;
         //display: none;
@@ -67,6 +67,7 @@ section {
     top: 0;
     left: 50%;
     z-index: 1000;
+    display: none;
 }
 
 section:nth-of-type(1){
