@@ -15,7 +15,8 @@
     var group = s.group();
     group.append(s.rect(edgeX, edgeY, edgeWidth, edgeHeight, edgeRx, edgeRy).attr({fill: "white"}));
 
-    var chargerCutout = s.rect(50 - (12 / 2), 207.5 - 0.4, 12, 1.25, 2.5).attr({fill: "black"}).appendTo(group);
+    var chargerCutout = s.rect(50 - (12 / 2), 206 - (0.8 / 2), 12, 0.8, 3).attr({fill: "black"}).appendTo(group);
+    var headphoneJack = s.rect(18, 206 - (0.8 / 2), 4.5, (0.8 / 2), 3).attr({fill: "black"}).appendTo(group);
 
     edge.attr({mask: group});
     
@@ -149,22 +150,23 @@
     var buttonOuterR = 7.8;
 
     var buttonOuter = s.circle(buttonX, buttonY, buttonOuterR).attr({
-        //fill: "#181818",
-        fill: "none"
+        fill: "#181818",
+        //fill: "none"
     });
 
     var buttonMask = s.circle(buttonX, buttonY, buttonOuterR);
    
-    var buttonGlareGradient = s.gradient("r(0.5, 0.5, 0.5)rgba(255, 255, 255, 0.35)-rgba(255, 255, 255, 0)");
+    var buttonGlareGradient = s.gradient("r(0.5, 0.58, 0.5)rgba(255, 255, 255, 0.45)-rgba(255, 255, 255, 0)");
 
-    var buttonGlareR = s.circle(56, 191.85, 6.6).attr({
-        //fill: buttonGlareGradient,
-        fill: "none"
+    var buttonGlareR = s.circle(56.55, 191.5, 8.5).attr({
+        fill: buttonGlareGradient
+        //fill: "none"
+        //fill: "red"
     });
 
-    var buttonGlareL = s.circle(43, 196.85, 6.6).attr({
-        //fill: buttonGlareGradient
-        fill: "none"
+    var buttonGlareL = s.circle(43, 196.85, 7.5).attr({
+        fill: buttonGlareGradient
+        //fill: "red"
     });
 
     var buttonGlareGroup = s.group(buttonGlareR, buttonGlareL).attr({
@@ -174,8 +176,8 @@
     var buttonInnerR = 7;
 
     var buttonInner = s.circle(buttonX, buttonY, buttonInnerR).attr({
-        //fill: "#080808"
-        fill: "none"
+        fill: "#080808"
+        //fill: "none"
     });
 
     var cameraXOffset = -16;
