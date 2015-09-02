@@ -101,7 +101,7 @@ section #mysvg {
   z-index: 10;
 }
 
-/* line 39, ../sass/screen.scss */
+/* line 38, ../sass/screen.scss */
 .waldo {
   position: fixed;
   height: 100%;
@@ -113,17 +113,17 @@ section #mysvg {
   display: none;
 }
 
-/* line 50, ../sass/screen.scss */
+/* line 49, ../sass/screen.scss */
 section:nth-of-type(1) {
   background: white;
 }
 
-/* line 54, ../sass/screen.scss */
+/* line 53, ../sass/screen.scss */
 section:nth-of-type(2) {
   background: #444;
 }
 
-/* line 58, ../sass/screen.scss */
+/* line 57, ../sass/screen.scss */
 section:nth-of-type(3) {
   background: #666;
 }
