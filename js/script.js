@@ -12,16 +12,25 @@
             fill: edgeGradient
         });
 
+    var testAccent = s.circle(0, 44, 12).attr({
+        fill: "red",
+        //fill: "none"
+    });
+
     var group = s.group();
     group.append(s.rect(edgeX, edgeY, edgeWidth, edgeHeight, edgeRx, edgeRy).attr({fill: "white"}));
+    var group1 = s.group();
+    group1.append(s.circle(0, 44, 12).attr({fill: "white"}));
 
     var chargerCutout = s.rect(50 - (12 / 2), 206 - (0.8 / 2.25), 12, 0.8, 3).attr({fill: "black"}).appendTo(group);
     var headphoneJack = s.rect(18, 206 - (0.8 / 2.25), 4.5, (0.8 / 2), 3).attr({fill: "black"}).appendTo(group);
     var volUpCutout = s.rect(-(0.8 / 2), 44, 0.8, 14.8, 3).attr({fill: "black"}).appendTo(group);
+    var volUpCutoutTest = s.rect(-(0.8 / 2), 44, 0.8, 14.8, 3).attr({fill: "black"}).appendTo(group1);
     var volDownCutout = s.rect(-(0.8 / 2), 62, 0.8, 14.8, 3).attr({fill: "black"}).appendTo(group);
     var powerCutout = s.rect(100 - (0.8 / 2), 44, 0.8, 14.8, 3).attr({fill: "black"}).appendTo(group);
 
     edge.attr({mask: group});
+    testAccent.attr({mask: group1});
     
     var edgeGlareDiffX = 1;
     var edgeGlareDiffY = 0.75;
