@@ -12,15 +12,19 @@
             fill: edgeGradient
         });
 
-    var testAccent = s.circle(0, 44, 12).attr({
-        fill: "red",
+    var accentBlur = s.filter(Snap.filter.blur(1.5, 1.5));
+
+    var testAccent = s.rect(-(0.8), 43.5, 1.6, 15.8, 2.5).attr({
+        fill: "#111",
         //fill: "none"
+        filter: accentBlur
     });
 
     var group = s.group();
     group.append(s.rect(edgeX, edgeY, edgeWidth, edgeHeight, edgeRx, edgeRy).attr({fill: "white"}));
+    
     var group1 = s.group();
-    group1.append(s.circle(0, 44, 12).attr({fill: "white"}));
+    group1.append(s.rect(-(0.8), 43.5, 1.6, 15.8, 2.5).attr({fill: "white"}));
 
     var chargerCutout = s.rect(50 - (12 / 2), 206 - (0.8 / 2.25), 12, 0.8, 3).attr({fill: "black"}).appendTo(group);
     var headphoneJack = s.rect(18, 206 - (0.8 / 2.25), 4.5, (0.8 / 2), 3).attr({fill: "black"}).appendTo(group);
