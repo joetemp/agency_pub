@@ -20,8 +20,16 @@ section {
         top: 50%;
         left: 50%;
         //transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-        display: none;
+        transform: translate(-80%, -50%);
+        //display: none;
+    }
+    
+    #buttons{
+        position: absolute;
+        width: calc(20% + 5px);
+        top: 50%;
+        left: 50%;
+        transform: translate(-80%, -50%);
     }
 
     #mysvg {
@@ -29,7 +37,7 @@ section {
         top: 50%;
         left: 50%;
         width: 20%;
-        transform: translate(-50%, -50%);
+        transform: translate(30%, -50%);
         z-index: 10;
         //display: none;
     }

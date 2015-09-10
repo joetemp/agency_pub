@@ -88,20 +88,27 @@ section #guide {
   width: 20%;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  display: none;
+  transform: translate(-80%, -50%);
 }
 /* line 27, ../sass/screen.scss */
+section #buttons {
+  position: absolute;
+  width: calc(20% + 5px);
+  top: 50%;
+  left: 50%;
+  transform: translate(-80%, -50%);
+}
+/* line 35, ../sass/screen.scss */
 section #mysvg {
   position: absolute;
   top: 50%;
   left: 50%;
   width: 20%;
-  transform: translate(-50%, -50%);
+  transform: translate(30%, -50%);
   z-index: 10;
 }
 
-/* line 38, ../sass/screen.scss */
+/* line 46, ../sass/screen.scss */
 .waldo {
   position: fixed;
   height: 100%;
@@ -113,17 +120,17 @@ section #mysvg {
   display: none;
 }
 
-/* line 49, ../sass/screen.scss */
+/* line 57, ../sass/screen.scss */
 section:nth-of-type(1) {
   background: white;
 }
 
-/* line 53, ../sass/screen.scss */
+/* line 61, ../sass/screen.scss */
 section:nth-of-type(2) {
   background: #444;
 }
 
-/* line 57, ../sass/screen.scss */
+/* line 65, ../sass/screen.scss */
 section:nth-of-type(3) {
   background: #666;
 }
