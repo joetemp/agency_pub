@@ -1,4 +1,4 @@
-    var s = Snap("#mysvg")
+    var s = Snap("#iphone")
 
     var edgeWidth = 100;
     var edgeHeight = 206;
