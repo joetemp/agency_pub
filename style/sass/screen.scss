@@ -21,7 +21,7 @@ section {
         left: 50%;
         //transform: translate(-50%, -50%);
         transform: translate(-80%, -50%);
-        //display: none;
+        display: none;
     }
     
     #buttons_guide{
@@ -30,6 +30,7 @@ section {
         top: 50%;
         left: 50%;
         transform: translate(-80%, -50%);
+        display: none;
     }
 
     #iphone {
@@ -37,17 +38,18 @@ section {
         top: 50%;
         left: 50%;
         width: 20%;
-        transform: translate(30%, -50%);
+        transform: translate(-50%, -50%);
         z-index: 10;
         //display: none;
+        background: yellow;
     }
 
     #buttons {
         position: absolute;
         top: 50%;
-        left: 49%;
-        width: 21%;
-        transform: translate(30%, -50%);
+        left: 50%;
+        width: 20.3%;
+        transform: translate(-50%, -50%);
         background: red;
     }
 }

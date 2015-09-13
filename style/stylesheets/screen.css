@@ -89,6 +89,7 @@ section #guide {
   top: 50%;
   left: 50%;
   transform: translate(-80%, -50%);
+  display: none;
 }
 /* line 27, ../sass/screen.scss */
 section #buttons_guide {
@@ -97,27 +98,29 @@ section #buttons_guide {
   top: 50%;
   left: 50%;
   transform: translate(-80%, -50%);
+  display: none;
 }
-/* line 35, ../sass/screen.scss */
+/* line 36, ../sass/screen.scss */
 section #iphone {
   position: absolute;
   top: 50%;
   left: 50%;
   width: 20%;
-  transform: translate(30%, -50%);
+  transform: translate(-50%, -50%);
   z-index: 10;
+  background: yellow;
 }
-/* line 45, ../sass/screen.scss */
+/* line 47, ../sass/screen.scss */
 section #buttons {
   position: absolute;
   top: 50%;
-  left: 49%;
-  width: 21%;
-  transform: translate(30%, -50%);
+  left: 50%;
+  width: 20.3%;
+  transform: translate(-50%, -50%);
   background: red;
 }
 
-/* line 55, ../sass/screen.scss */
+/* line 57, ../sass/screen.scss */
 .waldo {
   position: fixed;
   height: 100%;
@@ -129,17 +132,17 @@ section #buttons {
   display: none;
 }
 
-/* line 66, ../sass/screen.scss */
+/* line 68, ../sass/screen.scss */
 section:nth-of-type(1) {
   background: white;
 }
 
-/* line 70, ../sass/screen.scss */
+/* line 72, ../sass/screen.scss */
 section:nth-of-type(2) {
   background: #444;
 }
 
-/* line 74, ../sass/screen.scss */
+/* line 76, ../sass/screen.scss */
 section:nth-of-type(3) {
   background: #666;
 }
