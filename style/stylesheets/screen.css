@@ -108,7 +108,7 @@ section #iphone {
   width: 20%;
   transform: translate(-50%, -50%);
   z-index: 10;
-  background: yellow;
+  background: red;
 }
 /* line 47, ../sass/screen.scss */
 section #buttons {
@@ -117,7 +117,7 @@ section #buttons {
   left: 50%;
   width: 20.3%;
   transform: translate(-50%, -50%);
-  background: red;
+  background: blue;
 }
 
 /* line 57, ../sass/screen.scss */
