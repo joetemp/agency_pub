@@ -105,8 +105,8 @@ section #iphone {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 20%;
-  transform: translate(-50%, -50%);
+  width: 60%;
+  transform: translate(30%, -20%);
   z-index: 10;
 }
 /* line 46, ../sass/screen.scss */
@@ -114,11 +114,11 @@ section #buttons {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 20%;
-  transform: translate(-50.6%, -50%);
+  width: 60%;
+  transform: translate(29.4%, -20%);
 }
 
-/* line 55, ../sass/screen.scss */
+/* line 56, ../sass/screen.scss */
 .waldo {
   position: fixed;
   height: 100%;
@@ -130,17 +130,17 @@ section #buttons {
   display: none;
 }
 
-/* line 66, ../sass/screen.scss */
+/* line 67, ../sass/screen.scss */
 section:nth-of-type(1) {
   background: white;
 }
 
-/* line 70, ../sass/screen.scss */
+/* line 71, ../sass/screen.scss */
 section:nth-of-type(2) {
   background: #444;
 }
 
-/* line 74, ../sass/screen.scss */
+/* line 75, ../sass/screen.scss */
 section:nth-of-type(3) {
   background: #666;
 }

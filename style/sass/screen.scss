@@ -37,8 +37,8 @@ section {
         position: absolute;
         top: 50%;
         left: 50%;
-        width: 20%;
-        transform: translate(-50%, -50%);
+        width: 60%;
+        transform: translate(30%, -20%);
         z-index: 10;
         //display: none;
     }
@@ -47,8 +47,9 @@ section {
         position: absolute;
         top: 50%;
         left: 50%;
-        width: 20%;
-        transform: translate(-50.6%, -50%);
+        width: 60%;
+        // This always needs to be 0.6% to the LEFT of where the iphone is.
+        transform: translate(29.4%, -20%);
     }
 }
 
