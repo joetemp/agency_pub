@@ -116,8 +116,16 @@ section #vol_buttons {
   width: 20%;
   transform: translate(29.4%, -50%);
 }
+/* line 55, ../sass/screen.scss */
+section #power_button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20%;
+  transform: translate(30.6%, -50%);
+}
 
-/* line 56, ../sass/screen.scss */
+/* line 66, ../sass/screen.scss */
 .waldo {
   position: fixed;
   height: 100%;
@@ -129,17 +137,17 @@ section #vol_buttons {
   display: none;
 }
 
-/* line 67, ../sass/screen.scss */
+/* line 77, ../sass/screen.scss */
 section:nth-of-type(1) {
   background: white;
 }
 
-/* line 71, ../sass/screen.scss */
+/* line 81, ../sass/screen.scss */
 section:nth-of-type(2) {
   background: #444;
 }
 
-/* line 75, ../sass/screen.scss */
+/* line 85, ../sass/screen.scss */
 section:nth-of-type(3) {
   background: #666;
 }
