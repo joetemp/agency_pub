@@ -109,7 +109,7 @@ section #iphone {
   z-index: 10;
 }
 /* line 46, ../sass/screen.scss */
-section #buttons {
+section #vol_buttons {
   position: absolute;
   top: 50%;
   left: 50%;

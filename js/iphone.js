@@ -22,7 +22,7 @@
     var headphoneJack = s.rect(18, 206 - (0.8 / 2.25), 4.5, (0.8 / 2), 3).attr({fill: "black"}).appendTo(group);
     var volUpCutout = s.rect(-(0.8 / 2), 43, 0.8, 15.9, 3).attr({fill: "black"}).appendTo(group);
     var volDownCutout = s.rect(-(0.8 / 2), 62, 0.8, 15.9, 3).attr({fill: "black"}).appendTo(group);
-    var powerCutout = s.rect(100 - (0.8 / 2), 44, 0.8, 14.8, 3).attr({fill: "black"}).appendTo(group);
+    var powerCutout = s.rect(100 - (0.8 / 2), 43, 0.8, 15.9, 3).attr({fill: "black"}).appendTo(group);
 
     edge.attr({mask: group});
     
