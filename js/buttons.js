@@ -12,4 +12,10 @@ var volUpButton = s1.rect(-0.015, 43.1, 1.2, 15.7, 1, 1).attr({
 var volDownButton = s1.rect(-0.015, 62.1, 1.2, 15.7, 1, 1).attr({
     fill: buttonGradient
 });
- 
+
+var s2 = Snap("#power_button");
+
+var powerButton = s2.rect(98.812, 43.1, 1.2, 15.7, 1, 1).attr({
+    fill: buttonGradient
+});
+
