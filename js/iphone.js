@@ -247,27 +247,51 @@ var sensor = s.circle(sensorX, sensorY, sensorR).attr({
     fill: "rgba(255, 255, 255, 0.1)"
 });
 
+/*var line = s.line(10, 10, 20, 20).attr({
+    stroke: "red",
+    strokeWidth: 3
+});
+
+var line1 = s.line(20, 10, 10, 20).attr({
+    stroke: "red",
+    strokeWidth: 3
+});*/
+
 var speakerWidth = 16;
 var speakerHeight = 1.6;
 var speakerX = (faceDiffX / 2) + (faceWidth / 2) - (speakerWidth / 2);
 var speakerY = (faceDiffY / 2) + ((faceHeight - displayHeight) / 4) - (speakerHeight / 2);
 
-var speakerGradient = s.gradient("l(0, 0, 0, 1)#383838-#484848-#282828"),
+var speakerGradient = s.gradient("l(0, 0, 0, 1)#282828-#383838-#181818"),
     speaker = s.rect(speakerX, speakerY, speakerWidth, speakerHeight, 0.75).attr({
     fill: speakerGradient
 });
 
+/*
 var holes = s.circle(0.15, 0.1, 0.15).attr({
     fill: "#222"
 }).pattern(0, 0, 0.4, 0.4),
 speakerPattern = s.rect(speakerX, speakerY, speakerWidth, speakerHeight, 0.75).attr({
-    fill: holes
+    fill: holes 
 });
+*/
+
+
+var x1 = s.line(0, 0, 0.6, 0.6),
+    x2 = s.line(0.6, 0, 0, 0.6),
+    g = s.g(x2, x1).attr({ 
+        stroke: "#585858",
+        strokeWidth: 0.06
+}).pattern(0, 0, 0.6, 0.6),
+speakerPattern = s.rect(speakerX, speakerY, speakerWidth, speakerHeight, 0.75).attr({
+    fill: g 
+});
+
 
 var s1 = Snap("#vol_buttons");
 
 
-var buttonGradient = s1.gradient("l(0, 0, 0, 1)#2f3336-#d3b7ba:10-#b3b7ba:90-#2f3336");
+var buttonGradient = s1.gradient("l(0, 0, 0, 1)#2f3336-#b3b7ba:10-#b3b7ba:90-#2f3336");
 
 var volUpButton = s1.rect(-0.015, 43.1, 1.2, 15.7, 1, 1).attr({
     fill: buttonGradient

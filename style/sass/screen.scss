@@ -7,6 +7,10 @@
 @import "compass/css3";
 @import "iphone";
 
+// Variables
+$iphone-width: 80%;
+$translate-y: -10%;
+
 body, html {
     height: 100%;
 }
@@ -37,8 +41,8 @@ section {
         position: absolute;
         top: 50%;
         left: 50%;
-        width: 20%;
-        transform: translate(-50%, -50%);
+        width: $iphone-width;
+        transform: translate(-50%, $translate-y);
         z-index: 10;
         //display: none;
     }
@@ -47,18 +51,18 @@ section {
         position: absolute;
         top: 50%;
         left: 50%;
-        width: 20%;
+        width: $iphone-width;
         // This always needs to be 0.6% to the LEFT of where the iphone is.
-        transform: translate(-50.6%, -50%);
+        transform: translate(-50.6%, $translate-y);
     }
     
     #power_button{
         position: absolute;
         top: 50%;
         left: 50%;
-        width: 20%;
+        width: $iphone-width;
         // This always needs to be 0.6% to the RIGHT of where the iphone is.
-        transform: translate(-49.4%, -50%);
+        transform: translate(-49.4%, $translate-y);
     }
 
 
