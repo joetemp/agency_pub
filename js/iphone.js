@@ -154,7 +154,7 @@ var buttonY = ((faceDiffY / 2) + faceHeight) - ((faceHeight - displayHeight) / 4
 var buttonOuterR = 7.8;
 
 var buttonOuter = s.circle(buttonX, buttonY, buttonOuterR).attr({
-    fill: "#181818",
+    fill: "#121212",
     //fill: "none"
 });
 
