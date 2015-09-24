@@ -189,7 +189,7 @@ var cameraX = (faceDiffX / 2) + (faceWidth / 2) + cameraXOffset;
 var cameraY = (faceDiffY / 2) + ((faceHeight - displayHeight) / 4);
 var cameraOuterR = 1.7;
 
-var cameraOuterGradient = s.gradient("r(0.75, 0.75, 0.65)#797979-#1f1f1f"),
+var cameraOuterGradient = s.gradient("r(0.75, 0.75, 0.65)#898989-#2f2f2f"),
     cameraOuter = s.circle(cameraX, cameraY, cameraOuterR).attr({
         fill: cameraOuterGradient
     });
@@ -197,7 +197,7 @@ var cameraOuterGradient = s.gradient("r(0.75, 0.75, 0.65)#797979-#1f1f1f"),
 
 var lensShadowBlur = s.filter(Snap.filter.blur(0.05, 0.05)),
     lensShadow = s.circle(cameraX - 0.05, cameraY - 0.05, 1.1).attr({
-    fill: "rgba(0, 0, 0, 0.6)",
+    fill: "rgba(0, 0, 0, 0.8)",
     filter: lensShadowBlur
 });
 
@@ -205,7 +205,7 @@ var cameraInnerR = 0.9;
 
 var cameraInnerGradient = s.gradient("r(0.6, 0.6, 0.8)#0f141a-#263b72"),
     cameraInner = s.circle(cameraX, cameraY, cameraInnerR).attr({
-        fill: "#0f141a"
+        fill: "#000"
     });
 
 var lensMask = s.circle(cameraX, cameraY, cameraInnerR).attr({
