@@ -89,7 +89,6 @@ section #guide {
   top: 50%;
   left: 50%;
   transform: translate(-80%, -50%);
-  display: none;
 }
 /* line 31, ../sass/screen.scss */
 section #buttons_guide {
@@ -105,8 +104,8 @@ section #iphone {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 90%;
-  transform: translate(-50%, -10%);
+  width: 20%;
+  transform: translate(0%, -50%);
   z-index: 10;
 }
 /* line 50, ../sass/screen.scss */
@@ -114,16 +113,16 @@ section #vol_buttons {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 90%;
-  transform: translate(-50.6%, -10%);
+  width: 20%;
+  transform: translate(-50.6%, -50%);
 }
 /* line 59, ../sass/screen.scss */
 section #power_button {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 90%;
-  transform: translate(-49.4%, -10%);
+  width: 20%;
+  transform: translate(-49.4%, -50%);
 }
 
 /* line 71, ../sass/screen.scss */

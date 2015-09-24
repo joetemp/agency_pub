@@ -262,9 +262,8 @@ var speakerHeight = 1.6;
 var speakerX = (faceDiffX / 2) + (faceWidth / 2) - (speakerWidth / 2);
 var speakerY = (faceDiffY / 2) + ((faceHeight - displayHeight) / 4) - (speakerHeight / 2);
 
-var speakerGradient = s.gradient("l(0, 0, 0, 1)#282828-#383838-#181818"),
-    speaker = s.rect(speakerX, speakerY, speakerWidth, speakerHeight, 0.75).attr({
-    fill: speakerGradient
+var speaker = s.rect(speakerX, speakerY, speakerWidth, speakerHeight, 0.75).attr({
+    fill: "#383838"
 });
 
 var x1 = s.line(0, 0, 0.6, 0.6),
@@ -277,6 +276,10 @@ speakerPattern = s.rect(speakerX, speakerY, speakerWidth, speakerHeight, 0.75).a
     fill: g 
 });
 
+var speakerGradient = s.gradient("l(0, 0, 0, 1)rgba(0, 0, 0, 0.3)-rgba(0, 0, 0, 0)-rgba(0, 0, 0, 0.3)"),
+    speakerOverlay = s.rect(speakerX, speakerY, speakerWidth, speakerHeight, 0.75).attr({
+    fill: speakerGradient
+});
 
 var s1 = Snap("#vol_buttons");
 

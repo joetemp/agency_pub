@@ -8,8 +8,8 @@
 @import "iphone";
 
 // Variables
-$iphone-width: 90%;
-$translate-y: -10%;
+$iphone-width: 20%;
+$translate-y: -50%;
 
 body, html {
     height: 100%;
@@ -25,7 +25,7 @@ section {
         left: 50%;
         //transform: translate(-50%, -50%);
         transform: translate(-80%, -50%);
-        display: none;
+        //display: none;
     }
     
     #buttons_guide{
@@ -42,7 +42,7 @@ section {
         top: 50%;
         left: 50%;
         width: $iphone-width;
-        transform: translate(-50%, $translate-y);
+        transform: translate(-0%, $translate-y);
         z-index: 10;
         //display: none;
     }
