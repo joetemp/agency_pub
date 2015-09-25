@@ -10,6 +10,8 @@
 // Variables
 $iphone-width: 20%;
 $translate-y: -50%;
+$translate-x: 20%;
+$guide-x: -90%;
 
 body, html {
     height: 100%;
@@ -25,7 +27,7 @@ section {
         left: 50%;
         //transform: translate(-50%, -50%);
         transform: translate(-80%, -50%);
-        //display: none;
+        display: none;
     }
     
     #buttons_guide{
@@ -33,8 +35,8 @@ section {
         width: calc(20% + 5px);
         top: 50%;
         left: 50%;
-        transform: translate(-80%, -50%);
-        display: none;
+        transform: translate($guide-x, -50%);
+        //display: none;
     }
 
     #iphone {
@@ -42,7 +44,7 @@ section {
         top: 50%;
         left: 50%;
         width: $iphone-width;
-        transform: translate(-0%, $translate-y);
+        transform: translate($translate-x, $translate-y);
         z-index: 10;
         //display: none;
     }
@@ -53,7 +55,7 @@ section {
         left: 50%;
         width: $iphone-width;
         // This always needs to be 0.6% to the LEFT of where the iphone is.
-        transform: translate(-50.6%, $translate-y);
+        transform: translate($translate-x - 0.6%, $translate-y);
     }
     
     #power_button{
@@ -62,7 +64,7 @@ section {
         left: 50%;
         width: $iphone-width;
         // This always needs to be 0.6% to the RIGHT of where the iphone is.
-        transform: translate(-49.4%, $translate-y);
+        transform: translate($translate-x + 0.6%, $translate-y);
     }
 
 

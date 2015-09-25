@@ -215,22 +215,22 @@ var lensMask = s.circle(cameraX, cameraY, cameraInnerR).attr({
 var lensGlareBlur = s.filter(Snap.filter.blur(0.09, 0.09)), 
     bigGlare = s.circle(cameraX - 0.5, cameraY - 1.3, 1).attr({
     //fill: "#38508C" 
-    fill: "rgba(94, 147, 212, 0.7)", 
+    fill: "rgba(80, 130, 230, 0.85)", 
     filter: lensGlareBlur
 });
 
 var bigGlare1 = s.circle(cameraX + 0.5, cameraY + 1.3, 1).attr({
-    fill: "rgba(94, 147, 212, 0.5)", 
+    fill: "rgba(80, 130, 230, 0.5)", 
     filter: lensGlareBlur
 });
 
-var smallGlare = s.circle(cameraX - 0.7, cameraY + 0.25, 0.25).attr({
-    fill: "rgba(94, 147, 212, 1)", 
+var smallGlare = s.circle(cameraX - 0.7, cameraY + 0.25, 0.35).attr({
+    fill: "rgba(80, 130, 230, 1)", 
     filter: lensGlareBlur
 });
 
-var smallGlare1 = s.circle(cameraX + 0.7, cameraY - 0.25, 0.25).attr({
-    fill: "rgba(94, 147, 212, 0.8)", 
+var smallGlare1 = s.circle(cameraX + 0.7, cameraY - 0.25, 0.3).attr({
+    fill: "rgba(80, 130, 230, 0.85)", 
     filter: lensGlareBlur
 });
 
