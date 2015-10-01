@@ -10,7 +10,7 @@
 // Variables
 $iphone-width: 20%;
 $translate-y: -50%;
-$translate-x: 20%;
+$translate-x: -50%;
 $guide-x: -90%;
 
 body, html {
@@ -36,7 +36,7 @@ section {
         top: 50%;
         left: 50%;
         transform: translate($guide-x, -50%);
-        //display: none;
+        display: none;
     }
 
     #iphone {
@@ -56,6 +56,7 @@ section {
         width: $iphone-width;
         // This always needs to be 0.6% to the LEFT of where the iphone is.
         transform: translate($translate-x - 0.6%, $translate-y);
+        z-index: 9;
     }
     
     #power_button{
@@ -65,8 +66,20 @@ section {
         width: $iphone-width;
         // This always needs to be 0.6% to the RIGHT of where the iphone is.
         transform: translate($translate-x + 0.6%, $translate-y);
+        z-index: 9;
     }
 
+    #window{
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 110%;
+        height: 61.5%;
+        background: rgba(#ffd166, 1);
+        box-shadow: inset 0px 0px 8px 3px rgba(black, 0.2);
+            
+    }
 
 }
 

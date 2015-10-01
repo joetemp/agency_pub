@@ -98,6 +98,7 @@ section #buttons_guide {
   top: 50%;
   left: 50%;
   transform: translate(-90%, -50%);
+  display: none;
 }
 /* line 42, ../sass/screen.scss */
 section #iphone {
@@ -105,7 +106,7 @@ section #iphone {
   top: 50%;
   left: 50%;
   width: 20%;
-  transform: translate(20%, -50%);
+  transform: translate(-50%, -50%);
   z-index: 10;
 }
 /* line 52, ../sass/screen.scss */
@@ -114,18 +115,31 @@ section #vol_buttons {
   top: 50%;
   left: 50%;
   width: 20%;
-  transform: translate(19.4%, -50%);
+  transform: translate(-50.6%, -50%);
+  z-index: 9;
 }
-/* line 61, ../sass/screen.scss */
+/* line 62, ../sass/screen.scss */
 section #power_button {
   position: absolute;
   top: 50%;
   left: 50%;
   width: 20%;
-  transform: translate(20.6%, -50%);
+  transform: translate(-49.4%, -50%);
+  z-index: 9;
+}
+/* line 72, ../sass/screen.scss */
+section #window {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 110%;
+  height: 61.5%;
+  background: #ffd166;
+  box-shadow: inset 0px 0px 8px 3px rgba(0, 0, 0, 0.2);
 }
 
-/* line 73, ../sass/screen.scss */
+/* line 86, ../sass/screen.scss */
 .waldo {
   position: fixed;
   height: 100%;
@@ -137,17 +151,17 @@ section #power_button {
   display: none;
 }
 
-/* line 84, ../sass/screen.scss */
+/* line 97, ../sass/screen.scss */
 section:nth-of-type(1) {
   background: white;
 }
 
-/* line 88, ../sass/screen.scss */
+/* line 101, ../sass/screen.scss */
 section:nth-of-type(2) {
   background: #444;
 }
 
-/* line 92, ../sass/screen.scss */
+/* line 105, ../sass/screen.scss */
 section:nth-of-type(3) {
   background: #666;
 }
