@@ -134,8 +134,8 @@ section #window {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 110%;
-  height: 61.5%;
-  background: #ffd166;
+  height: 62%;
+  background: #fdfdfd;
   box-shadow: inset 0px 0px 8px 3px rgba(0, 0, 0, 0.2);
 }
 
